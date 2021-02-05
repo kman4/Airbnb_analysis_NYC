@@ -9,9 +9,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://u0983jf093:093840934if@something.elephantsql.com/jwirefu094"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("ELEPHANT_SQL")
 
-postgres://mydtrkxm:nAf-2CH3VOp1XIKf35ifKzRIYwl6vuvy@ziggy.db.elephantsql.com:5432/mydtrkxm
 db = SQLAlchemy(app)
 
 
