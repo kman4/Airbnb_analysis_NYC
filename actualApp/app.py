@@ -54,5 +54,6 @@ def borough_data():
     # jsonify the dictionary
     return jsonify(borough_dict)
 
+
 if __name__ == "__main__":
     app.run()(debug=True)

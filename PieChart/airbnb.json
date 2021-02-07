@@ -1,0 +1,10 @@
+{
+    "boroughs":["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"],
+
+    "roomdata":[{"borough": "Bronx", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "Room_Type_Values": [348, 1, 558, 30]},
+                {"borough": "Brooklyn", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "Room_Type_Values": [7202, 17, 7001, 219]},
+                {"borough": "Manhattan", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "Room_Type_Values": [10135, 270, 5948, 289]},
+                {"borough": "Queens", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "Room_Type_Values": [1641, 9, 2841, 138]},
+                {"borough": "Staten Island", "room_type": ["Entire home/apt","Private Room", "Shared Room"], "Room_Type_Values": [144, 130, 2]}]
+
+}
