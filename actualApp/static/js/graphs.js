@@ -103,7 +103,7 @@ title: "Top 15 Neighbourhood that are Most Reviewed",
 
  var layout3 = {
   title: 'Top 5 Neighbourhood with the Most Superhost Listings',
-  height: 600
+  height: 1000
   }
 
  //Render the plots to the div tag with id "plot"
