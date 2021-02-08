@@ -16,17 +16,17 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__, template_folder='template')
 
 
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("airbnb_analysis_NYC_db")
-db = SQLAlchemy(app)
-Base = automap_base()
-Base.prepare(db.engine, reflect = True)
+#db = SQLAlchemy(app)
+#Base = automap_base()
+#Base.prepare(db.engine, reflect = True)
 
-boroughs_id = Base.classes.boroughs_id
-neighbourhood_id = Base.classes.neighbourhood_id
-host_id = Base.classes.host_id
-room_type_id = Base.classes.roomtype_id
-listing = Base.classes.listing_master
+#boroughs_id = Base.classes.boroughs_id
+#neighbourhood_id = Base.classes.neighbourhood_id
+#host_id = Base.classes.host_id
+#room_type_id = Base.classes.roomtype_id
+#listing = Base.classes.listing_master
 
 
 
