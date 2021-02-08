@@ -22,7 +22,7 @@ db = SQLAlchemy(app)
 Base = automap_base()
 Base.prepare(db.engine, reflect = True)
 
-boroughs_id = Base.classes.boroughs_Id
+boroughs_id = Base.classes.boroughs_id
 neighbourhood_id = Base.classes.neighbourhood_id
 host_id = Base.classes.host_id
 room_type_id = Base.classes.roomtype_id
@@ -36,23 +36,22 @@ def main():
     return render_template("index.html")
 
 ## SERVICE ROUTES
-@app.route("/api/boroughs")
+@app.route("/api/neighbourhood")
 def borough_data():
     sel = [
-        boroughs_id.borough_id, 
-        boroughs_id.borough
+        neighbourhood_id.neighbourhoodid,
+        neighbourhood_id.neighbourhood
     ]
 
     results = db.session.query(*sel).all()
 
 
-    borough_dict = {
-        
-        "ID": [result[0] for result in results],
-        "name": [result[1] for result in results]
+    neighbour_dict = {
+        "id":[result[0] for result in results],
+        "neighbourhood": [result[1] for result in results]
     }
     # jsonify the dictionary
-    return jsonify(borough_dict)
+    return jsonify(neighbour_dict)
 
 
 if __name__ == "__main__":
