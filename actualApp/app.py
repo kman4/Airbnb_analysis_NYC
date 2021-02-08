@@ -1,4 +1,6 @@
 import os
+
+pip install sqlalchemy
 from flask import (
     Flask,
     render_template,
@@ -6,10 +8,10 @@ from flask import (
     request,
     redirect)
 from flask_sqlalchemy import SQLAlchemy
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine
+#import sqlalchemy
+#from sqlalchemy.ext.automap import automap_base
+#from sqlalchemy.orm import Session
+#from sqlalchemy import create_engine
 
 
 
