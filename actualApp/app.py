@@ -1,6 +1,4 @@
 import os
-
-pip install sqlalchemy
 from flask import (
     Flask,
     render_template,
@@ -17,9 +15,9 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__, template_folder='template')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://ablekwsj:scRNnW0ztSKbX4PP5NQnVJq_uoU0iZ-O@ziggy.db.elephantsql.com:5432/ablekwsj"
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-##app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("ELEPHANT_SQL")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("airbnb_analysis_NYC_db")
 db = SQLAlchemy(app)
 Base = automap_base()
 Base.prepare(db.engine, reflect = True)
