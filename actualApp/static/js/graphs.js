@@ -27,18 +27,18 @@ function BuildPlots(borough) {
   var tracebar = {
     x: neighbourhood,
     y:  reviews,
-    type:"bar",
+    type:"bar"
   }
   
   //Apply the group bar mode to the layout
   var layout1 = {
     margin: {
-              l: 30,
-              r: 30,
-              t: 85,
+              l: 100,
+              r: 80,
+              t: 90,
               b: 75
             },
-    title: "Top 15 Neighbourhood that are Most Reviewed"
+    title: "Top 15 Neighbourhood that are Most Reviewed",
           };
   
   //data to display for trace 1
