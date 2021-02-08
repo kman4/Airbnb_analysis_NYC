@@ -33,7 +33,7 @@ listing = Base.classes.listing_master
 ## FRONT_END ROUTES
 @app.route("/")
 def main(): 
-    return render_template("graphs.html")
+    return render_template("index.html")
 
 ## SERVICE ROUTES
 # @app.route("/api/neighbourhood")
