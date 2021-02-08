@@ -15,18 +15,18 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__, template_folder='template')
 
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://ablekwsj:scRNnW0ztSKbX4PP5NQnVJq_uoU0iZ-O@ziggy.db.elephantsql.com:5432/ablekwsj"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+##app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("ELEPHANT_SQL")
+db = SQLAlchemy(app)
+Base = automap_base()
+Base.prepare(db.engine, reflect = True)
 
-#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenviron("airbnb_analysis_NYC_db")
-#db = SQLAlchemy(app)
-#Base = automap_base()
-#Base.prepare(db.engine, reflect = True)
-
-#boroughs_id = Base.classes.boroughs_id
-#neighbourhood_id = Base.classes.neighbourhood_id
-#host_id = Base.classes.host_id
-#room_type_id = Base.classes.roomtype_id
-#listing = Base.classes.listing_master
+boroughs_id = Base.classes.boroughs_id
+neighbourhood_id = Base.classes.neighbourhood_id
+host_id = Base.classes.host_id
+room_type_id = Base.classes.roomtype_id
+listing = Base.classes.listing_master
 
 
 
@@ -54,9 +54,9 @@ def main():
     # }
     # # jsonify the dictionary
     # return jsonify(neighbour_dict)
-#@app.route("/api/main")
-#def firstRoute():
-#    return jsonify(thisdict)
+##@app.route("/api/main")
+##def firstRoute():
+##    return jsonify(thisdict)
 
 if __name__ == "__main__":
     app.run()(debug=True)
