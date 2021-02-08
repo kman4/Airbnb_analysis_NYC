@@ -54,9 +54,9 @@ def main():
     # }
     # # jsonify the dictionary
     # return jsonify(neighbour_dict)
-@app.route("/api/main")
-def firstRoute():
-    return jsonify(thisdict)
+#@app.route("/api/main")
+#def firstRoute():
+#    return jsonify(thisdict)
 
 if __name__ == "__main__":
     app.run()(debug=True)
