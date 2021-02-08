@@ -10369,7 +10369,7 @@ a:focus {
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
-  color: #16171a;
+  color: #4e73df;
   font-weight: 700;
 }
 
@@ -10813,7 +10813,7 @@ a:focus {
 
 .chart-pie {
   position: relative;
-  height: 15rem;
+  height: 50rem;
   width: 100%;
 }
 
