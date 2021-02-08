@@ -6,7 +6,7 @@ function BuildPlots(borough) {
   
       //Retreive the sample dataset
       var sample_data = data.roomdata;
-      console.log(sample_data)
+      //console.log(sample_data)
   
       //Filter sample data by borough
       var samples_filter = sample_data.filter(object => object.borough == borough);
@@ -16,30 +16,105 @@ function BuildPlots(borough) {
       var roomtype_list = samples.room_type;
       var roomvalue_list = samples.Room_Type_Values;
       var neighbourhood_list = samples.neighbourhood;
-      var reviews_list = samples.total_reviews;
+      var reviews_list = samples.top_reviews;
       var year_list = samples.years;
       var rates_list = samples.rates
-  
       var reviews = reviews_list.slice(0, 15)
       var neighbourhood =  neighbourhood_list.slice(0, 15)
+      var superhost = samples.superhost_value
+      var superhost_area = samples.superhost_area
+      var total_neighbourhood = samples.total_neighbourhoods
+      var total_listings = samples.total_listings
+      var total_reviews = samples.total_reviews
+
+  // INDICATOR
+  var data_n = [
+    {
+      type: "indicator",
+      mode: "number",
+      gauge: { shape: "bullet" },
+      value: total_neighbourhood,
+      domain: { x: [0, 1], y: [0, 1] },
+      title: { text: "<b># of Neighbourhood</b>" }
+    }
+  ];
+  var layout_a = { width: 450, height: 250 };
+  Plotly.newPlot('neighbourhood', data_n, layout_a);
+
+  var data_l = [
+    {
+      type: "indicator",
+      mode: "number",
+      gauge: { shape: "bullet" },
+      value: total_listings,
+      domain: { x: [0, 1], y: [0, 1] },
+      title: { text: "<b># of Listings</b>" }
+    }
+  ];
+  Plotly.newPlot('listing', data_l, layout_a);
+
+  var data_r = [
+    {
+      type: "indicator",
+      mode: "number",
+      gauge: { shape: "bullet" },
+      value: total_reviews,
+      domain: { x: [0, 1], y: [0, 1] },
+      title: { text: "<b>Total Reviews</b>"}
+    }
+  ];
+  Plotly.newPlot('review', data_r, layout_a);
   
-  // PLOT H BAR Trace1 for Top 10 OTU_ID Found 
-  var tracebar = {
-    x: neighbourhood,
-    y:  reviews,
-    type:"bar"
+ 
+// PLOT BAR Trace1 for Top 15 For Most Reviewed
+var tracebar = {
+x: neighbourhood,
+y:  reviews,
+type:"bar"
+}
+
+
+//Apply the group bar mode to the layout
+var layout1 = {
+margin: {
+        l: 100,
+        r: 80,
+        t: 90,
+        b: 75
+      },
+height: 600,
+title: "Top 15 Neighbourhood that are Most Reviewed",
+    };
+    
+  
+ // PLOT BUBBLE CHART for the Sample Values for all the OTU_ID under each ID
+ var tracebubble={
+  x: superhost_area,
+  y: superhost,
+  text: superhost_area,
+  mode: "markers",
+  marker: {
+    size: superhost
+    }
+};
+
+ //data to display for trace 2
+ var data3=[tracebubble]
+
+ var layout3 = {
+  title: 'Top 5 Neighbourhood with the Most Superhost Listings',
+  height: 600
   }
-  
-  //Apply the group bar mode to the layout
-  var layout1 = {
-    margin: {
-              l: 100,
-              r: 80,
-              t: 90,
-              b: 75
-            },
-    title: "Top 15 Neighbourhood that are Most Reviewed",
-          };
+
+ //Render the plots to the div tag with id "plot"
+  Plotly.newPlot("bubble", data3, layout3);
+ 
+
+
+ 
+
+
+
   
   //data to display for trace 1
   var data1 = [tracebar];
@@ -83,6 +158,10 @@ function BuildPlots(borough) {
   });    
   
   }
+
+ 
+  
+  
   
   function DropDown(){
     //Retreive JSON data to be used to extract information

@@ -36,22 +36,24 @@ def main():
     return render_template("index.html")
 
 ## SERVICE ROUTES
-@app.route("/api/neighbourhood")
-def borough_data():
-    sel = [
-        neighbourhood_id.neighbourhoodid,
-        neighbourhood_id.neighbourhood
-    ]
+# @app.route("/api/neighbourhood")
+# def borough_data():
+    # sel = [
+    #     boroughs_id.borough_id,
+    #     boroughs_id.borough,
+    #     listing.price,
+    # ]
 
-    results = db.session.query(*sel).all()
+    # results = db.session.query(listing,func.mean(price)).group_by(borough_id).all()
 
 
-    neighbour_dict = {
-        "id":[result[0] for result in results],
-        "neighbourhood": [result[1] for result in results]
-    }
-    # jsonify the dictionary
-    return jsonify(neighbour_dict)
+    # neighbour_dict = {
+    #     "id":[result[0] for result in results],
+        
+    #     "price": [result[1] for result in results]
+    # }
+    # # jsonify the dictionary
+    # return jsonify(neighbour_dict)
 
 
 if __name__ == "__main__":
