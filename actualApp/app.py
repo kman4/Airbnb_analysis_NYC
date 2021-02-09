@@ -28,6 +28,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 ##room_type_id = Base.classes.roomtype_id
 ##listing = Base.classes.listing_master
 
+dictionary = {"boroughs":["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]}
 
 
 ## FRONT_END ROUTES
@@ -36,24 +37,9 @@ def main():
     return render_template("index.html")
 
 ##SERVICE ROUTES
-@app.route("/api/neighbourhood")
+@app.route("/api/borough")
 def borough_data():
-    sel = [
-        boroughs_id.borough_id,
-        boroughs_id.borough,
-        listing.price,
-    ]
-
-    results = db.session.query(listing,func.mean(price)).group_by(borough_id).all()
-
-
-    neighbour_dict = {
-        "id":[result[0] for result in results],
-        
-        "price": [result[1] for result in results]
-    }
-    ##jsonify the dictionary
-    return jsonify(neighbour_dict)
+    return jsonify(dictionary)
 
 
 if __name__ == "__main__":
