@@ -1,11 +1,11 @@
  
-var url = "/api/borough"
+const url = "/api/borough"
 
 //PLOT FUNCTION - Display h-bar & bubble charts by ID
 function BuildPlots(borough) {
 
   //Retreive JSON data to be used to extract information
-  d3.json("url").then((data)=> {console.log(data)
+  d3.json(url).then((data)=> {console.log(data)
 
     //Retreive the sample dataset
     var sample_data = data.roomdata;
