@@ -1,3 +1,3 @@
-d3.json("/api/main").then(function(data){
-    console.log(data)
-})
+// var url =  d3.json("/api/borough").then(function(data){
+// console.log(data)
+// })
