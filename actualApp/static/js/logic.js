@@ -1,14 +1,10 @@
-
-
 // Create the tile layer that will be the background of our map
-var lightmap =  L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+var lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-  tileSize: 512,
-  maxZoom: 18,
-  zoomOffset: -1,
-  id: "mapbox/light-v10",
-  accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
-})
+  maxZoom: 20,
+  id: "mapbox/satellite-v9",
+  accessToken: API_KEY
+});
 
 // Initialize all of the LayerGroups we'll be using
 var layers = {
@@ -38,10 +34,10 @@ lightmap.addTo(map);
 // Create an overlays object to add to the layer control
 var overlays = {
   "Coming Soon": layers.COMING_SOON,
-  "Empty Stations": layers.EMPTY,
-  "Low Stations": layers.LOW,
-  "Healthy Stations": layers.NORMAL,
-  "Out of Order": layers.OUT_OF_ORDER
+  "Rented Air BnB": layers.EMPTY,
+  "Low Inventory": layers.LOW,
+  "Still Available": layers.NORMAL,
+  "Not Available": layers.OUT_OF_ORDER
 };
 
 // Create a control for our layers, add our overlay layers to it
@@ -63,31 +59,31 @@ info.addTo(map);
 // Initialize an object containing icons for each layer group
 var icons = {
   COMING_SOON: L.ExtraMarkers.icon({
-    icon: "ion-settings",
+    icon: "ion-android-home",
     iconColor: "white",
     markerColor: "yellow",
     shape: "star"
   }),
   EMPTY: L.ExtraMarkers.icon({
-    icon: "ion-android-bicycle",
+    icon: "ion-android-home",
     iconColor: "white",
     markerColor: "red",
     shape: "circle"
   }),
   OUT_OF_ORDER: L.ExtraMarkers.icon({
-    icon: "ion-minus-circled",
+    icon: "ion-android-home",
     iconColor: "white",
     markerColor: "blue-dark",
     shape: "penta"
   }),
   LOW: L.ExtraMarkers.icon({
-    icon: "ion-android-bicycle",
+    icon: "ion-android-home",
     iconColor: "white",
     markerColor: "orange",
     shape: "circle"
   }),
   NORMAL: L.ExtraMarkers.icon({
-    icon: "ion-android-bicycle",
+    icon: "",
     iconColor: "white",
     markerColor: "green",
     shape: "circle"
@@ -152,7 +148,7 @@ d3.json("https://gbfs.citibikenyc.com/gbfs/en/station_information.json", functio
       newMarker.addTo(layers[stationStatusCode]);
 
       // Bind a popup to the marker that will  display on click. This will be rendered as HTML
-      newMarker.bindPopup(station.name + "<br> Capacity: " + station.capacity + "<br>" + station.num_bikes_available + " Bikes Available");
+      newMarker.bindPopup(station.name + "<br> Capacity: " + station.capacity + "<br>" + station.num_bikes_available + " Still Available");
     }
 
     // Call the updateLegend function, which will... update the legend!
