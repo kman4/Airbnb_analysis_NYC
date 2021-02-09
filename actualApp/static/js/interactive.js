@@ -1,5 +1,5 @@
 // Creating map object
-var myMap = L.map("map-id", {
+var myMap = L.map("map-int", {
     center: [40.7, -73.95],
     zoom: 11
   });
@@ -15,13 +15,13 @@ var myMap = L.map("map-id", {
   }).addTo(myMap);
   
   // Store API query variables
-  var baseURL = "https://data.cityofnewyork.us/resource/fhrw-4uyv.json?";
-  var date = "$where=created_date between'2016-01-01T00:00:00' and '2017-01-01T00:00:00'";
-  var complaint = "&complaint_type=Rodent";
-  var limit = "&$limit=10000";
+  //var baseURL = "https://data.cityofnewyork.us/resource/fhrw-4uyv.json?";
+  //var date = "$where=created_date between'2016-01-01T00:00:00' and '2017-01-01T00:00:00'";
+ // var complaint = "&complaint_type=Rodent";
+  //var limit = "&$limit=10000";
   
   // Assemble API query URL
-  var url = baseURL + date + complaint + limit;
+  //var url = baseURL + date + complaint + limit;
   
   // Grab the data with d3
   d3.json(url, function(response) {
