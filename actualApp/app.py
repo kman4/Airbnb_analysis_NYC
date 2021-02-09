@@ -28,7 +28,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 ##room_type_id = Base.classes.roomtype_id
 ##listing = Base.classes.listing_master
 
-dictionary = {"boroughs":["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]}
+borough_dict = {"boroughs":["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]}
 
 
 ## FRONT_END ROUTES
@@ -36,10 +36,16 @@ dictionary = {"boroughs":["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Is
 def main(): 
     return render_template("index.html")
 
+## VIEW ROUTES
+## FRONT_END ROUTES
+@app.route("/graphs")
+def graphs(): 
+    return render_template("graphs.html")
+
 ##SERVICE ROUTES
 @app.route("/api/borough")
 def borough_data():
-    return jsonify(dictionary)
+    return jsonify(borough_dict)
 
 
 if __name__ == "__main__":
