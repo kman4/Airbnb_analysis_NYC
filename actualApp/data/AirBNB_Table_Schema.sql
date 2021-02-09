@@ -43,7 +43,6 @@ CREATE TABLE "listing_master" (
     "review_scores_location" INT   NOT NULL,
     "review_scores_value" INT   NOT NULL,
     "instant_bookable" BOOLEAN   NOT NULL,
-    "reviews_per_month" FLOAT   NOT NULL,
     CONSTRAINT "pk_listing_master" PRIMARY KEY (
         "id"
      )
