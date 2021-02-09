@@ -9,7 +9,7 @@ from flask_sqlalchemy import SQLAlchemy
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 
 
 
@@ -33,27 +33,27 @@ listing = Base.classes.listing_master
 ## FRONT_END ROUTES
 @app.route("/")
 def main(): 
-    return render_template("graphs.html")
+    return render_template("index.html")
 
-## SERVICE ROUTES
-# @app.route("/api/neighbourhood")
-# def borough_data():
-    # sel = [
-    #     boroughs_id.borough_id,
-    #     boroughs_id.borough,
-    #     listing.price,
-    # ]
+##SERVICE ROUTES
+@app.route("/api/neighbourhood")
+def borough_data():
+    sel = [
+        boroughs_id.borough_id,
+        boroughs_id.borough,
+        listing.price,
+    ]
 
-    # results = db.session.query(listing,func.mean(price)).group_by(borough_id).all()
+    results = db.session.query(listing,func.mean(price)).group_by(borough_id).all()
 
 
-    # neighbour_dict = {
-    #     "id":[result[0] for result in results],
+    neighbour_dict = {
+        "id":[result[0] for result in results],
         
-    #     "price": [result[1] for result in results]
-    # }
-    # # jsonify the dictionary
-    # return jsonify(neighbour_dict)
+        "price": [result[1] for result in results]
+    }
+    ##jsonify the dictionary
+    return jsonify(neighbour_dict)
 
 
 if __name__ == "__main__":
