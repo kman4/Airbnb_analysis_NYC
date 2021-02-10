@@ -1,7 +1,8 @@
  
+// JSON DATA ROUTE
 const url = "/api/borough"
 
-//PLOT FUNCTION - Display h-bar & bubble charts by ID
+//PLOT FUNCTION - Display indicators, line graph, pie chart, bar graph and bubble chart by borough
 function BuildPlots(borough) {
 
   //Retreive JSON data to be used to extract information
@@ -73,17 +74,59 @@ var data_r = [
 ];
 Plotly.newPlot('review', data_r, layout_a);
 
+// LINE GRAPH
+// Build line graph on average rates from 2017-2021
+var traceline = {
+  x: year_list,
+  y: rates_list,
+  type:"lines",
+  mode: "lines"
+}
 
-// PLOT BAR Trace1 for Top 15 For Most Reviewed
+// data to display for line graph
+var data1 = [traceline]
+
+// Apply line graph layout
+var layout1 = {
+  xaxis:{title: "Years", showgrid: false},  
+  yaxis:{title: "Rates", showgrid: false},  
+  title: "<b>Average Rates by Year</b>"
+        };
+
+// Plot line graph in the line div
+Plotly.newPlot("line", data1, layout1)
+
+// PIE CHART
+// create pie chart for distribution of room types for each borough
+var tracePie = {
+  labels: roomtype_list,
+  values: roomvalue_list,
+  type:"pie",
+}
+// data to display for pie chart
+var data2 = [tracePie]
+
+// create layout for pie chart
+var layout2 = {
+  title: "<b>Roomtype Distribution<b>"
+        };
+
+// Plot line graph in the pie div
+Plotly.newPlot("pie", data2, layout2)
+
+// BAR GRAPH
+// PLOT for Top 15 For Most Reviewed
 var tracebar = {
 x: neighbourhood,
-y:  reviews,
+y: reviews,
 type:"bar"
 }
 
+// data to display for bar graph
+var data3 = [tracebar];
 
-//Apply the group bar mode to the layout
-var layout1 = {
+//Apply the layout for the bar graph
+var layout3 = {
 margin: {
       l: 100,
       r: 80,
@@ -93,9 +136,14 @@ margin: {
 height: 600,
 title: "<b>Top 15 Neighbourhood that are Most Reviewed</b>",
   };
-  
 
-// PLOT BUBBLE CHART for the Sample Values for all the OTU_ID under each ID
+
+// Plot line graph in the bar div
+Plotly.newPlot("bar", data3, layout3);
+
+
+// BUBBLE CHART
+// Build a bubble chart with the top 5 superhosts by neighbourhood
 var tracebubble={
 x: superhost_area,
 y: superhost,
@@ -106,59 +154,24 @@ marker: {
   }
 };
 
-//data to display for trace 2
-var data3=[tracebubble]
+// data to display for bubble chart
+var data4=[tracebubble]
 
-var layout3 = {
+//Apply the layout for the bar graph
+var layout4 = {
 title: '<b>Top 5 Neighbourhood with the Most Superhost Listings</b>',
 height: 1000
 }
 
-//Render the plots to the div tag with id "plot"
-Plotly.newPlot("bubble", data3, layout3);
-
-//data to display for trace 1
-var data1 = [tracebar];
-
-Plotly.newPlot("bar", data1, layout1);
-
- // create pie chart
- var tracePie = {
-  labels: roomtype_list,
-  values: roomvalue_list,
-  type:"pie",
-}
-
-var data = [tracePie]
-var layout = {
-  
-  title: "Roomtype Distribution"
-        };
-
-Plotly.newPlot("pie", data, layout)
-
-// PLOT Line graph for rates in 2017-2021
-var traceline = {
-  x: year_list,
-  y: rates_list,
-  type:"lines",
-  mode: "lines"
-}
-
-//Apply the group bar mode to the layout
-var layout2 = {
-  xaxis:{title: "Years", showgrid: false},  
-  yaxis:{title: "Rates", showgrid: false},  
-  title: "Average Rates by Year"
-        };
-
-var data2 = [traceline]
-
-Plotly.newPlot("line", data2, layout2)
+// Plot bubble chart in the bar div
+Plotly.newPlot("bubble", data4, layout4);
 
 });    
 
 }
+
+// DROP DOWN MENU
+// Create a drop down menu for user to choose the plots by borough
 
 function DropDown(){
   //Retreive JSON data to be used to extract information
