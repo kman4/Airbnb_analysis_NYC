@@ -5,7 +5,7 @@ const url = "/api/borough"
 function BuildPlots(borough) {
 
   //Retreive JSON data to be used to extract information
-  d3.json(url).then((data)=> {console.log(data)
+  d3.json(url).then(function(data){
 
     //Retreive the sample dataset
     var sample_data = data.roomdata;
@@ -162,7 +162,8 @@ Plotly.newPlot("line", data2, layout2)
 
 function DropDown(){
   //Retreive JSON data to be used to extract information
-  d3.json(url).then((data)=> {
+  d3.json(url).then(function(data){
+
 
     //Retreive id values in name list to create an array for the dropdown menu
     var boroughs = data.boroughs;
