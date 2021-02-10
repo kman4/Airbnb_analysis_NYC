@@ -52,6 +52,12 @@ def main():
 def graphs(): 
     return render_template("graphs.html")
 
+
+## FRONT_END ROUTES
+@app.route("/interactive")
+def interactive(): 
+    return render_template("interactive.html")
+
 ##SERVICE ROUTES
 @app.route("/api/borough")
 def borough_data():
