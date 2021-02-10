@@ -39,7 +39,7 @@ var data_n = [
     gauge: { shape: "bullet" },
     value: total_neighbourhood,
     domain: { x: [0, 1], y: [0, 1] },
-    title: { text: "<b># of Neighbourhoods</b>" }
+    title: { text: "<b># of Neighbourhood</b>" }
   }
 ];
 var layout_a = { width: 450, height: 250 };
