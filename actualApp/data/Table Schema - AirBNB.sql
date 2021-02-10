@@ -43,6 +43,7 @@ CREATE TABLE "listing_master" (
     "review_scores_location" INT   NOT NULL,
     "review_scores_value" INT   NOT NULL,
     "instant_bookable" BOOLEAN   NOT NULL,
+    "reviews_per_month" FLOAT   NOT NULL,
     CONSTRAINT "pk_listing_master" PRIMARY KEY (
         "id"
      )
@@ -53,14 +54,6 @@ CREATE TABLE "boroughs_Id" (
     "borough" VARCHAR   NOT NULL,
     CONSTRAINT "pk_boroughs_Id" PRIMARY KEY (
         "borough_id"
-     )
-);
-
-CREATE TABLE "host_id" (
-    "host_id" INT   NOT NULL,
-    "host_name" VARCHAR   NOT NULL,
-    CONSTRAINT "pk_host_id" PRIMARY KEY (
-        "host_id"
      )
 );
 
@@ -80,26 +73,15 @@ CREATE TABLE "room_type_id" (
      )
 );
 
-CREATE TABLE "rates_monthly" (
-    "year" INT   NOT NULL,
-    "month" INT   NOT NULL,
+CREATE TABLE "rates_yearly" (
+    "rates_id" INT   NOT NULL,
     "borough_id" INT   NOT NULL,
-    "neighbourhood_id" INT   NOT NULL,
-    "room_type_id" INT   NOT NULL,
-    "price" FLOAT   NOT NULL
-);
-
-CREATE TABLE "rates_weekOfDay" (
     "year" INT   NOT NULL,
-    "day_of_week" INT   NOT NULL,
-    "borough_id" INT   NOT NULL,
-    "neighbourhood_id" INT   NOT NULL,
-    "room_type_id" INT   NOT NULL,
-    "price" FLOAT   NOT NULL
+    "price" INT   NOT NULL,
+    CONSTRAINT "pk_rates_yearly" PRIMARY KEY (
+        "rates_id"
+     )
 );
-
-ALTER TABLE "listing_master" ADD CONSTRAINT "fk_listing_master_host_id" FOREIGN KEY("host_id")
-REFERENCES "host_id" ("host_id");
 
 ALTER TABLE "listing_master" ADD CONSTRAINT "fk_listing_master_neighbourhood_id" FOREIGN KEY("neighbourhood_id")
 REFERENCES "neighbourhood_id" ("neighbourhood_id");
@@ -110,21 +92,6 @@ REFERENCES "boroughs_Id" ("borough_id");
 ALTER TABLE "listing_master" ADD CONSTRAINT "fk_listing_master_room_type_id" FOREIGN KEY("room_type_id")
 REFERENCES "room_type_id" ("room_type_id");
 
-ALTER TABLE "rates_monthly" ADD CONSTRAINT "fk_rates_monthly_borough_id" FOREIGN KEY("borough_id")
+ALTER TABLE "rates_yearly" ADD CONSTRAINT "fk_rates_yearly_borough_id" FOREIGN KEY("borough_id")
 REFERENCES "boroughs_Id" ("borough_id");
-
-ALTER TABLE "rates_monthly" ADD CONSTRAINT "fk_rates_monthly_neighbourhood_id" FOREIGN KEY("neighbourhood_id")
-REFERENCES "neighbourhood_id" ("neighbourhood_id");
-
-ALTER TABLE "rates_monthly" ADD CONSTRAINT "fk_rates_monthly_room_type_id" FOREIGN KEY("room_type_id")
-REFERENCES "room_type_id" ("room_type_id");
-
-ALTER TABLE "rates_weekOfDay" ADD CONSTRAINT "fk_rates_weekOfDay_borough_id" FOREIGN KEY("borough_id")
-REFERENCES "boroughs_Id" ("borough_id");
-
-ALTER TABLE "rates_weekOfDay" ADD CONSTRAINT "fk_rates_weekOfDay_neighbourhood_id" FOREIGN KEY("neighbourhood_id")
-REFERENCES "neighbourhood_id" ("neighbourhood_id");
-
-ALTER TABLE "rates_weekOfDay" ADD CONSTRAINT "fk_rates_weekOfDay_room_type_id" FOREIGN KEY("room_type_id")
-REFERENCES "room_type_id" ("room_type_id");
 
