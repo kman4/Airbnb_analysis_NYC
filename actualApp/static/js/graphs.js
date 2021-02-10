@@ -91,7 +91,7 @@ margin: {
       b: 75
     },
 height: 600,
-title: "Top 15 Neighbourhood that are Most Reviewed",
+title: "<b>Top 15 Neighbourhood that are Most Reviewed</b>",
   };
   
 
@@ -110,7 +110,7 @@ marker: {
 var data3=[tracebubble]
 
 var layout3 = {
-title: 'Top 5 Neighbourhood with the Most Superhost Listings',
+title: '<b>Top 5 Neighbourhood with the Most Superhost Listings</b>',
 height: 1000
 }
 
