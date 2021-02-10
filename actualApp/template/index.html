@@ -8,18 +8,21 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
   crossorigin=""/>
- 
+
+ <!-- Icons -->
+ <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+ <link rel="stylesheet" href="static/css/leaflet.extra-markers.min.css">
+
+
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style1.css">
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-
 </head>
 
 
 <body>
-
   <body id="page-top">
 
     <!-- Page Wrapper -->
@@ -212,7 +215,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Total # of NYC Boroughs</div>
+                                                # of Boroughs</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
                                         </div>
                                         <div class="col-auto">
@@ -230,7 +233,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                               Total # of NYC Neighbourhoods</div>
+                                                # of Neighbourhoods</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">230</div>
                                         </div>
                                         <div class="col-auto">
@@ -247,7 +250,7 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total # of NYC Airbnb Listings
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1"># of Listings
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
@@ -277,7 +280,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                               Total # of Airbnb Room Types</div>
+                                                # of Room Types</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
                                         </div>
                                         <div class="col-auto">
@@ -317,7 +320,7 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <a href = "/graphs"><img src="image/line.png" alt="Yearly Average Rate" width = 600></a>
+                                    <a href = "/graphs"><img src="static/css/line.png" alt="Yearly Average Rate" width = 600></a>
                                     <div class="chart-area">
                                         <canvas id="myAreaChart"></canvas>
                                     </div>
@@ -349,7 +352,7 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <a href = "/graphs"><img src="image/pie.png" alt="Room Distribution" width = 500 ></a>
+                                    <a href = "/graphs"><img src="static/css/pie.png" alt="Room Distribution" width = 500 ></a>
                                     <div class="chart-pie pt-4 pb-2">
                                         <canvas id="myPieChart"></canvas>
                       
@@ -407,16 +410,60 @@
     </div>
     <!-- End of Page Wrapper -->
 
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+
+  <!-- The div that holds our map -->
+  <div id="map-id"></div>
+
+  <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
   <!-- Leaflet JavaScript -->
   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>
 
+  
 
   <!-- API Key -->
   <script type="text/javascript" src="../static/js/config.js"></script>
 
+   <!-- Icons -->
+   <script src="../static/js/leaflet.extra-markers.min.js"></script>
 
    <!-- polyfill.io is library for using newer JavaScript features in older browers (such as Object.assign) -->
    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
@@ -426,8 +473,9 @@
   <script type="text/javascript" src="../static/js/graphs.js"></script>
   <script type="text/javascript" src="../static/js/interactive.js"></script>
   <script type="text/javascript" src="../static/js/app.js"></script>
+  <script src="{{ url_for('static', filename='js/graphs.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
   <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
-
 </body>
 
 </html>
