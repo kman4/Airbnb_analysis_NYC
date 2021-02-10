@@ -162,7 +162,7 @@ Plotly.newPlot("line", data2, layout2)
 
 function DropDown(){
   //Retreive JSON data to be used to extract information
-  //d3.json(url).then(function(data){
+  d3.json(url).then(function(data){
 
 
     //Retreive id values in name list to create an array for the dropdown menu
