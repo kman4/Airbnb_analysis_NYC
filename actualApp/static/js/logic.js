@@ -14,8 +14,12 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: API_KEY
 }).addTo(myMap);
 
+
+
 // Use this link to get the geojson data.
 var link = "../data/neighbouthoods.gejson";
+
+console.log(link);
 
 // Function that will determine the color of a neighborhood based on the borough it belongs to
 function chooseColor(borough) {
