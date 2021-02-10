@@ -17,8 +17,8 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 
 // Use this link to get the geojson data.
-const url = "/api/borough";
-console.log(url);
+const url2 = "/api/borough";
+//console.log(url);
 
 // Function that will determine the color of a neighborhood based on the borough it belongs to
 function chooseColor(borough) {
@@ -39,7 +39,8 @@ function chooseColor(borough) {
 }
 
 // Grabbing our GeoJSON data..
-d3.json(url, function(data) {
+d3.json(url2, function(data) {
+  console.log(data)
   // Creating a geoJSON layer with the retrieved data
   L.geoJson(data, {
     // Style each feature (in this case a neighborhood)
