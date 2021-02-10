@@ -47,20 +47,19 @@ def main():
     return render_template("index.html")
 
 ## VIEW ROUTES
-## FRONT_END ROUTES
 @app.route("/graphs")
 def graphs(): 
     return render_template("graphs.html")
 
-
-## FRONT_END ROUTES
-@app.route("/interactive")
-def interactive(): 
-    return render_template("interactive.html")
-
 ##SERVICE ROUTES
 @app.route("/api/borough")
 def borough_data():
+    return jsonify(borough_dict)
+
+
+##SERVICE ROUTES
+@app.route("/api/map")
+def map_data():
     return jsonify(borough_dict)
 
 # ##SERVICE ROUTES
