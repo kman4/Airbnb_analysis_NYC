@@ -1,4 +1,26 @@
- // Creating map object
+
+// JSON DATA ROUTE
+const url2 = "/api/borough"
+
+//PLOT FUNCTION - Display indicators, line graph, pie chart, bar graph and bubble chart by borough
+function BuildPlots(borough) {
+
+  //Retreive JSON data to be used to extract information
+  d3.json(url).then(function(data){
+
+    //Retreive the sample dataset
+    var sample_data = data.roomdata;
+    //console.log(sample_data)
+
+    //Filter sample data by first brough on the list
+    var samples_filter = sample_data.filter(object => object.borough == borough);
+    var samples= samples_filter[0]
+
+     //Retrieve the required datalists for the plots
+     var boroughs_list = samples.boroughs;
+     console.log(boroughs_list);
+})};
+// Creating map object
  var myMap = L.map("map", {
   center: [40.7128, -74.0059],
   zoom: 11
@@ -11,14 +33,11 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   maxZoom: 18,
   zoomOffset: -1,
   id: "mapbox/streets-v11",
-  accessToken: API_KEY
+  accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
 }).addTo(myMap);
 
-
-
 // Use this link to get the geojson data.
-const url2 = "/api/borough";
-//console.log(url);
+var link = "127.0.0.1:5000/api/borough";
 
 // Function that will determine the color of a neighborhood based on the borough it belongs to
 function chooseColor(borough) {
@@ -39,8 +58,7 @@ function chooseColor(borough) {
 }
 
 // Grabbing our GeoJSON data..
-d3.json(url2, function(data) {
-  console.log(data)
+d3.json(link, function(data) {
   // Creating a geoJSON layer with the retrieved data
   L.geoJson(data, {
     // Style each feature (in this case a neighborhood)
@@ -82,4 +100,6 @@ d3.json(url2, function(data) {
     }
   }).addTo(myMap);
 });
+
+
 

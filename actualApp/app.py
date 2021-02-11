@@ -35,7 +35,7 @@ borough_dict = {
         {"borough": "Brooklyn", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "room_Type_Values": [7202, 17, 7001, 219], "neighbourhood":["Bedford-Stuyvesant","Williamsburg","Bushwick","Crown Heights","Greenpoint","Clinton Hill","East Flatbush", "Flatbush", "Park Slope", "Prospect-Lefferts Gardens", "Prospects Heights", "Fort Greene", "South Slope", "Sunset Park", "East New York"],
         "top_reviews":[84320, 56473, 34206, 27131, 12430, 11385, 11275, 11062, 10895, 10318, 9184, 8321, 7957, 7646, 6348], "years":["2017", "2018", "2019", "2020", "2021"], "rates":[140, 141, 125, 127, 127], "superhost_area":["Bedford-Stuyvesant","Williamsburg","Bushwick","Crown Heights","Greenpoint"],"superhost_value":[601, 436, 308, 234, 125], "total_neighbourhoods": 48, "total_listings": 14439, "total_reviews": 368528}, 
         {"borough": "Manhattan", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "room_Type_Values": [10135, 270, 5948, 289], "neighbourhood":["Harlem", "Hell's Kitchen", "East Village", "Upper West Side", "East Harlem", "Upper East Side", "Chelsea", "Midtown", "Lower East Side", "Washington Heights", "West Village", "Soho", "Theater District", "Chinatown", "Financial District"],
-        "top_reviews":[55439, 33227, 30461, 25423, 22373, 19986, 17622, 15063, 14791, 12593, 11644, 6853, 6055, 5367, 4812],"years":["2017", "2018", "2019", "2020", "2021"], "rates":[198, 226, 188, 202, 184],"superhost_area":["Harlem", "Hell's Kitchen", "East Village", "Upper West Side", "East Village"],"superhost_value":[486, 216, 212, 199, 180],"total_neighbourhoods": 32, "total_listings": 16642, "total_reviews": 315373},
+        "top_reviews":[55439, 33227, 30461, 25423, 22373, 19986, 17622, 15063, 14791, 12593, 11644, 6853, 6055, 5367, 4812],"years":["2017", "2018", "2019", "2020", "2021"], "rates":[198, 226, 188, 202, 184],"superhost_area":["Harlem", "Hell's Kitchen", "Midtown", "Upper West Side", "East Village"],"superhost_value":[486, 216, 212, 199, 180],"total_neighbourhoods": 32, "total_listings": 16642, "total_reviews": 315373},
         {"borough": "Queens", "room_type": ["Entire home/apt", "Hotel Room", "Private Room", "Shared Room"], "room_Type_Values": [1641, 9, 2841, 138], "neighbourhood":["Astoria","Flushing","East Elmhurst","Jamaica","Long Island City","Jackson Heights","Sunnyside","Ditmars Steinway","Ridgewood","Springfield Gardens","Woodside","Elmhurst","St.Albans", "Maspeth", "Queens Village"],
         "top_reviews":[16909, 14466, 10589, 9034, 7896, 6159, 5999, 5666, 5557, 4971, 4341, 3831, 2736, 2518, 2410],"years":["2017", "2018", "2019", "2020", "2021"], "rates":[111, 107, 103, 105, 115], "superhost_area":["Astoria","Flushing","Long Island City", "Woodside", "Jamaica"],"superhost_value":[136, 109, 79, 62, 60],"total_neighbourhoods": 53, "total_listings": 4629, "total_reviews": 133022},
         {"borough": "Staten Island", "room_type": ["Entire home/apt","Private Room", "Shared Room"], "room_Type_Values": [144, 130, 2],"neighbourhood":["St. George","Tompkinsville","Arrochar", "West Brighton","Clifton","Randall Manor","Concord","New Brighton","Castleton Corners", "Eltingville", "Mariners Harbor", "New Dorp Beach", "Silver Lake", "Huguenot", "Grymes Hill"],
@@ -47,20 +47,19 @@ def main():
     return render_template("index.html")
 
 ## VIEW ROUTES
-## FRONT_END ROUTES
 @app.route("/graphs")
 def graphs(): 
     return render_template("graphs.html")
 
-
-## FRONT_END ROUTES
-@app.route("/interactive")
-def interactive(): 
-    return render_template("interactive.html")
-
 ##SERVICE ROUTES
 @app.route("/api/borough")
 def borough_data():
+    return jsonify(borough_dict)
+
+
+##SERVICE ROUTES
+@app.route("/api/map")
+def map_data():
     return jsonify(borough_dict)
 
 # ##SERVICE ROUTES
