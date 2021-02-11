@@ -11,14 +11,11 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   maxZoom: 18,
   zoomOffset: -1,
   id: "mapbox/streets-v11",
-  accessToken: API_KEY
+  accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
 }).addTo(myMap);
 
-
-
 // Use this link to get the geojson data.
-const url = "/api/borough";
-console.log(url);
+var link = "../data/nyc.geojson";
 
 // Function that will determine the color of a neighborhood based on the borough it belongs to
 function chooseColor(borough) {
@@ -39,7 +36,7 @@ function chooseColor(borough) {
 }
 
 // Grabbing our GeoJSON data..
-d3.json(url, function(data) {
+d3.json(link, function(data) {
   // Creating a geoJSON layer with the retrieved data
   L.geoJson(data, {
     // Style each feature (in this case a neighborhood)
@@ -81,4 +78,6 @@ d3.json(url, function(data) {
     }
   }).addTo(myMap);
 });
+
+
 
