@@ -1,18 +1,18 @@
 // Creating map object
-var myMap = L.map("map-int", {
-    center: [40.7, -73.95],
-    zoom: 11
-  });
+//var myMap = L.map("map-int", {
+  //  center: [40.7, -73.95],
+   // zoom: 11
+  //});
   
   // Adding tile layer to the map
-  L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-    attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-    tileSize: 512,
-    maxZoom: 18,
-    zoomOffset: -1,
-    id: "mapbox/streets-v11",
-    accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
-  }).addTo(myMap);
+ // L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
+  //  attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+  //  tileSize: 512,
+  //  maxZoom: 18,
+  //  zoomOffset: -1,
+  //  id: "mapbox/streets-v11",
+  //  accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
+ // }).addTo(myMap);
   
   // Store API query variables
   //var baseURL = "https://data.cityofnewyork.us/resource/fhrw-4uyv.json?";
@@ -24,29 +24,29 @@ var myMap = L.map("map-int", {
   //var url = baseURL + date + complaint + limit;
   
   // Grab the data with d3
-  d3.json(url, function(response) {
+ // d3.json(url, function(response) {
   
     // Create a new marker cluster group
-    var markers = L.markerClusterGroup();
+   // var markers = L.markerClusterGroup();
   
     // Loop through data
-    for (var i = 0; i < response.length; i++) {
+    //for (var i = 0; i < response.length; i++) {
   
       // Set the data location property to a variable
-      var location = response[i].location;
+ //     var location = response[i].location;
   
       // Check for location property
-      if (location) {
+   //   if (location) {
   
         // Add a new marker to the cluster group and bind a pop-up
-        markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
-          .bindPopup(response[i].descriptor));
-      }
+     //   markers.addLayer(L.marker([location.coordinates[1], location.coordinates[0]])
+       //   .bindPopup(response[i].descriptor));
+      //}
   
-    }
+    //}
   
     // Add our marker cluster layer to the map
-    myMap.addLayer(markers);
+   // myMap.addLayer(markers);
   
-  });
+ // });
   
