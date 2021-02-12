@@ -1,10 +1,13 @@
- // Creating map object
- var myMap = L.map("map", {
-  center: [40.7128, -74.0059],
+// JSON DATA ROUTE
+const url = "/api/map"
+
+// Creating map object
+var myMap = L.map("map", {
+  center: [40.7, -73.95],
   zoom: 11
 });
 
-// Adding tile layer
+// Adding tile layer to the map
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
@@ -14,70 +17,39 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: "pk.eyJ1Ijoia21hbjQiLCJhIjoiY2trZWx6ajlxMGUxbDJucXRqN3F5cjhlYSJ9.jxFZ7QN6KRFnHr7tfY0wVQ"
 }).addTo(myMap);
 
-// Use this link to get the geojson data.
-var link = "/data/nyc.geojson";
+// Grab the data with d3
+d3.json(url, function(response) {
 
-// Function that will determine the color of a neighborhood based on the borough it belongs to
-function chooseColor(borough) {
-  switch (borough) {
-  case "Brooklyn":
-    return "yellow";
-  case "Bronx":
-    return "red";
-  case "Manhattan":
-    return "orange";
-  case "Queens":
-    return "green";
-  case "Staten Island":
-    return "purple";
-  default:
-    return "black";
-  }
-}
+    // Create a new marker cluster group
+    var markers = L.markerClusterGroup();
 
-// Grabbing our GeoJSON data..
-d3.json(link, function(data) {
-  // Creating a geoJSON layer with the retrieved data
-  L.geoJson(data, {
-    // Style each feature (in this case a neighborhood)
-    style: function(feature) {
-      return {
-        color: "white",
-        // Call the chooseColor function to decide which color to color our neighborhood (color based on borough)
-        fillColor: chooseColor(feature.properties.borough),
-        fillOpacity: 0.5,
-        weight: 1.5
-      };
-    },
-    // Called on each feature
-    onEachFeature: function(feature, layer) {
-      // Set mouse events to change map styling
-      layer.on({
-        // When a user's mouse touches a map feature, the mouseover event calls this function, that feature's opacity changes to 90% so that it stands out
-        mouseover: function(event) {
-          layer = event.target;
-          layer.setStyle({
-            fillOpacity: 0.9
-          });
-        },
-        // When the cursor no longer hovers over a map feature - when the mouseout event occurs - the feature's opacity reverts back to 50%
-        mouseout: function(event) {
-          layer = event.target;
-          layer.setStyle({
-            fillOpacity: 0.5
-          });
-        },
-        // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
-        click: function(event) {
-          myMap.fitBounds(event.target.getBounds());
-        }
-      });
-      // Giving each feature a pop-up with information pertinent to it
-      layer.bindPopup("<h1>" + feature.properties.neighborhood + "</h1> <hr> <h2>" + feature.properties.borough + "</h2>");
+    // Loop through data
+  for (var i = 0; i < response.length; i++) {
 
+    // Set the data location property to a variable
+    var location = response[i];
+
+    // Check for location property
+    if (location) {
+
+      popupText = "<b>ID:</b> " + location.id + 
+      "<br><b>Borough:</b> " + location.borough +
+      "<br><b>Neighbourhood:</b> " + location.neighbourhood +
+      "<br><a href='" + location.listing_url + "'>More details</a>";
+
+
+      // Add a new marker to the cluster group and bind a pop-up
+      markers.addLayer(L.marker([location.latitude, location.longitude])
+        .bindPopup(popupText));
     }
-  }).addTo(myMap);
+
+  }
+
+  // Add our marker cluster layer to the map
+  myMap.addLayer(markers);
+
 });
+
 
 
 
