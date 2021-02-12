@@ -9,3 +9,16 @@ html {
   height: 100%;
 }
 
+
+.heading {
+  color: #FF5A5F;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: large
+}
+
+
+
+.grid-item { width: 30% }
+/* 2 columns wide */
+.grid-item--width2 { width: 30%; height: 60% }

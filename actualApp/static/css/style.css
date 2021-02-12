@@ -49,6 +49,12 @@
   box-sizing: border-box;
 }
 
+
+.title {
+
+}
+
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -66,10 +72,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #858796;
+  color: #f5f6fa;
   text-align: left;
   background-color: #fff;
 }
+
+
+/* 2 columns wide */
+.grid-item--width2 { width: 30%; height: 60% }
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -167,7 +178,7 @@ a {
 }
 
 a:hover {
-  color: #224abe;
+  color: #080808;
   text-decoration: underline;
 }
 
@@ -2902,7 +2913,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #4e73df;
+  color: #080808;
   text-decoration: none;
 }
 
@@ -9953,7 +9964,7 @@ a:focus {
 }
 
 .text-xs {
-  font-size: .7rem;
+  font-size: .9rem;
 }
 
 .text-lg {
