@@ -35,7 +35,9 @@ d3.json(url, function(response) {
       popupText = "<b>ID:</b> " + location.id + 
       "<br><b>Borough:</b> " + location.borough +
       "<br><b>Neighbourhood:</b> " + location.neighbourhood +
+      "<br><b>Rates (per night):</b> $" + location.price +
       "<br><a href='" + location.listing_url + "'>More details</a>";
+
 
 
       // Add a new marker to the cluster group and bind a pop-up

@@ -294,8 +294,19 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><br>
 
+                    <div class = "row">
+                        <div class = "col-md-8">
+                        <div class="col-md-6">
+                          <div class="well">
+                            <h5>Search by Boroughs:</h5>
+                            <select id="selDataset" onchange="optionChanged(this.value)">Bronx</select>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <br>
                     <!-- Content Row -->
                     <!-- GRAPHS PART 2-->
                     <div class="row">
@@ -305,7 +316,9 @@
                                 <h6 class="m-0 font-weight-bold text-primary">Line Graph</h6>
                             </div>
                             <div class="card-body">
+                                <div id="line">
                                 <a href = "/graphs"><img src="/static/css/lineplot.png" alt="Yearly Average Rate" width = 250 height = 150></a>
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -459,7 +472,7 @@
   <script type="text/javascript" src="../static/js/graphs.js"></script>
   <script type="text/javascript" src="../static/js/interactive.js"></script>
   <script type="text/javascript" src="../static/js/app.js"></script>
-<!--  <script src="{{ url_for('static', filename='js/graphs.js') }}"></script>-->
+  <script src="{{ url_for('static', filename='js/graphs.js') }}"></script>
   <script src="{{ url_for('static', filename='js/logic.js') }}"></script>>
   <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> 
 </body>
