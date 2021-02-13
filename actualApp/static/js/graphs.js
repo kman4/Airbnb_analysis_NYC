@@ -1,5 +1,4 @@
- 
-// JSON DATA ROUTE
+ // JSON DATA ROUTE
 const url = "/api/borough"
 
 //PLOT FUNCTION - Display indicators, line graph, pie chart, bar graph and bubble chart by borough

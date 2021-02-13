@@ -1,5 +1,5 @@
 // JSON DATA ROUTE
-const url = "/api/map"
+const url2 = "/api/map"
 
 // Creating map object
 var myMap = L.map("map", {
@@ -18,7 +18,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 
 // Grab the data with d3
-d3.json(url, function(response) {
+d3.json(url2, function(response) {
 
     // Create a new marker cluster group
     var markers = L.markerClusterGroup();
