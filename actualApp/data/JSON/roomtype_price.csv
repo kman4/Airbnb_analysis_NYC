@@ -1,0 +1,547 @@
+,borough,neighbourhood,room_type,price
+0,Bronx,Allerton,Entire home/apt,172.14285714285714
+1,Bronx,Allerton,Private room,56.0
+2,Bronx,Baychester,Entire home/apt,108.55555555555556
+3,Bronx,Baychester,Private room,61.4
+4,Bronx,Belmont,Entire home/apt,77.0
+5,Bronx,Belmont,Private room,41.7
+6,Bronx,Bronxdale,Entire home/apt,82.42857142857143
+7,Bronx,Bronxdale,Private room,53.72727272727273
+8,Bronx,Bronxdale,Shared room,51.0
+9,Bronx,Castle Hill,Entire home/apt,68.0
+10,Bronx,City Island,Entire home/apt,151.0
+11,Bronx,City Island,Private room,94.0
+12,Bronx,Claremont Village,Entire home/apt,92.71428571428571
+13,Bronx,Claremont Village,Private room,71.66666666666667
+14,Bronx,Clason Point,Entire home/apt,115.55555555555556
+15,Bronx,Clason Point,Private room,62.22222222222222
+16,Bronx,Co-op City,Private room,59.2
+17,Bronx,Concourse,Entire home/apt,102.52941176470588
+18,Bronx,Concourse,Private room,68.4
+19,Bronx,Concourse,Shared room,62.5
+20,Bronx,Concourse Village,Entire home/apt,81.2
+21,Bronx,Concourse Village,Private room,54.625
+22,Bronx,Concourse Village,Shared room,52.0
+23,Bronx,Country Club,Private room,68.0
+24,Bronx,East Morrisania,Entire home/apt,124.0
+25,Bronx,East Morrisania,Private room,79.28571428571429
+26,Bronx,Eastchester,Entire home/apt,203.55555555555554
+27,Bronx,Eastchester,Private room,59.4
+28,Bronx,Edenwald,Entire home/apt,171.33333333333334
+29,Bronx,Edenwald,Private room,118.2
+30,Bronx,Fieldston,Entire home/apt,604.0
+31,Bronx,Fieldston,Private room,69.0
+32,Bronx,Fordham,Entire home/apt,154.25
+33,Bronx,Fordham,Private room,67.17857142857143
+34,Bronx,Fordham,Shared room,63.75
+35,Bronx,Highbridge,Entire home/apt,102.9090909090909
+36,Bronx,Highbridge,Private room,53.92307692307692
+37,Bronx,Hunts Point,Entire home/apt,81.5
+38,Bronx,Hunts Point,Private room,41.8
+39,Bronx,Kingsbridge,Entire home/apt,113.52941176470588
+40,Bronx,Kingsbridge,Private room,75.80645161290323
+41,Bronx,Longwood,Entire home/apt,112.07142857142857
+42,Bronx,Longwood,Private room,82.02941176470588
+43,Bronx,Melrose,Entire home/apt,67.66666666666667
+44,Bronx,Melrose,Private room,49.6
+45,Bronx,Morris Heights,Entire home/apt,204.83333333333334
+46,Bronx,Morris Heights,Private room,78.42857142857143
+47,Bronx,Morris Park,Entire home/apt,99.57142857142857
+48,Bronx,Morris Park,Private room,69.6
+49,Bronx,Morrisania,Entire home/apt,112.16666666666667
+50,Bronx,Morrisania,Private room,43.0
+51,Bronx,Mott Haven,Entire home/apt,131.36
+52,Bronx,Mott Haven,Hotel room,0.0
+53,Bronx,Mott Haven,Private room,88.0
+54,Bronx,Mount Eden,Entire home/apt,110.0
+55,Bronx,Mount Eden,Private room,107.5
+56,Bronx,Mount Hope,Entire home/apt,113.75
+57,Bronx,Mount Hope,Private room,49.5
+58,Bronx,North Riverdale,Entire home/apt,124.5
+59,Bronx,North Riverdale,Private room,77.66666666666667
+60,Bronx,Norwood,Entire home/apt,94.5
+61,Bronx,Norwood,Private room,69.76190476190476
+62,Bronx,Norwood,Shared room,55.0
+63,Bronx,Olinville,Entire home/apt,125.0
+64,Bronx,Olinville,Private room,75.0
+65,Bronx,Olinville,Shared room,26.0
+66,Bronx,Parkchester,Entire home/apt,137.41666666666666
+67,Bronx,Parkchester,Private room,59.23076923076923
+68,Bronx,Parkchester,Shared room,35.0
+69,Bronx,Pelham Bay,Entire home/apt,145.66666666666666
+70,Bronx,Pelham Bay,Shared room,150.0
+71,Bronx,Pelham Gardens,Entire home/apt,108.8
+72,Bronx,Pelham Gardens,Private room,94.4
+73,Bronx,Port Morris,Entire home/apt,164.71428571428572
+74,Bronx,Port Morris,Private room,41.0
+75,Bronx,Port Morris,Shared room,25.153846153846153
+76,Bronx,Riverdale,Entire home/apt,519.0
+77,Bronx,Riverdale,Private room,66.5
+78,Bronx,Schuylerville,Private room,59.111111111111114
+79,Bronx,Schuylerville,Shared room,35.0
+80,Bronx,Soundview,Entire home/apt,72.33333333333333
+81,Bronx,Soundview,Private room,41.5
+82,Bronx,Spuyten Duyvil,Entire home/apt,114.5
+83,Bronx,Spuyten Duyvil,Private room,37.0
+84,Bronx,Throgs Neck,Entire home/apt,116.33333333333333
+85,Bronx,Throgs Neck,Private room,57.94444444444444
+86,Bronx,Tremont,Entire home/apt,190.5
+87,Bronx,Tremont,Private room,60.9
+88,Bronx,Tremont,Shared room,42.5
+89,Bronx,Unionport,Entire home/apt,166.16666666666666
+90,Bronx,Unionport,Private room,60.0
+91,Bronx,University Heights,Entire home/apt,110.0
+92,Bronx,University Heights,Private room,43.93333333333333
+93,Bronx,Van Nest,Entire home/apt,160.0
+94,Bronx,Van Nest,Private room,61.142857142857146
+95,Bronx,Van Nest,Shared room,31.0
+96,Bronx,Wakefield,Entire home/apt,163.6086956521739
+97,Bronx,Wakefield,Private room,68.10810810810811
+98,Bronx,West Farms,Private room,65.0
+99,Bronx,Westchester Square,Entire home/apt,85.5
+100,Bronx,Westchester Square,Private room,54.5
+101,Bronx,Williamsbridge,Entire home/apt,140.55555555555554
+102,Bronx,Williamsbridge,Private room,53.95652173913044
+103,Bronx,Woodlawn,Entire home/apt,154.33333333333334
+104,Bronx,Woodlawn,Private room,33.333333333333336
+105,Brooklyn,Bath Beach,Entire home/apt,102.11111111111111
+106,Brooklyn,Bath Beach,Private room,59.125
+107,Brooklyn,Bath Beach,Shared room,18.0
+108,Brooklyn,Bay Ridge,Entire home/apt,161.49019607843138
+109,Brooklyn,Bay Ridge,Private room,57.12307692307692
+110,Brooklyn,Bay Ridge,Shared room,51.111111111111114
+111,Brooklyn,Bedford-Stuyvesant,Entire home/apt,155.41051738761664
+112,Brooklyn,Bedford-Stuyvesant,Hotel room,1000.0
+113,Brooklyn,Bedford-Stuyvesant,Private room,66.18013698630136
+114,Brooklyn,Bedford-Stuyvesant,Shared room,35.92
+115,Brooklyn,Bensonhurst,Entire home/apt,102.90322580645162
+116,Brooklyn,Bensonhurst,Private room,56.03333333333333
+117,Brooklyn,Bensonhurst,Shared room,41.333333333333336
+118,Brooklyn,Bergen Beach,Entire home/apt,121.0909090909091
+119,Brooklyn,Bergen Beach,Private room,125.0
+120,Brooklyn,Boerum Hill,Entire home/apt,208.42592592592592
+121,Brooklyn,Boerum Hill,Private room,99.55555555555556
+122,Brooklyn,Borough Park,Entire home/apt,112.52380952380952
+123,Brooklyn,Borough Park,Private room,55.36507936507937
+124,Brooklyn,Borough Park,Shared room,41.666666666666664
+125,Brooklyn,Brighton Beach,Entire home/apt,129.84848484848484
+126,Brooklyn,Brighton Beach,Private room,59.095238095238095
+127,Brooklyn,Brighton Beach,Shared room,200.0
+128,Brooklyn,Brooklyn Heights,Entire home/apt,194.17021276595744
+129,Brooklyn,Brooklyn Heights,Private room,156.63636363636363
+130,Brooklyn,Brownsville,Entire home/apt,185.5
+131,Brooklyn,Brownsville,Private room,55.078947368421055
+132,Brooklyn,Brownsville,Shared room,27.0
+133,Brooklyn,Bushwick,Entire home/apt,144.46812749003985
+134,Brooklyn,Bushwick,Hotel room,50.0
+135,Brooklyn,Bushwick,Private room,60.38337801608579
+136,Brooklyn,Bushwick,Shared room,35.96774193548387
+137,Brooklyn,Canarsie,Entire home/apt,134.86206896551724
+138,Brooklyn,Canarsie,Private room,84.85507246376811
+139,Brooklyn,Canarsie,Shared room,100.0
+140,Brooklyn,Carroll Gardens,Entire home/apt,203.01574803149606
+141,Brooklyn,Carroll Gardens,Private room,119.91891891891892
+142,Brooklyn,Clinton Hill,Entire home/apt,207.544776119403
+143,Brooklyn,Clinton Hill,Private room,90.66455696202532
+144,Brooklyn,Clinton Hill,Shared room,69.5
+145,Brooklyn,Cobble Hill,Entire home/apt,200.51612903225808
+146,Brooklyn,Cobble Hill,Private room,101.76923076923077
+147,Brooklyn,Cobble Hill,Shared room,79.0
+148,Brooklyn,Columbia St,Entire home/apt,200.2
+149,Brooklyn,Columbia St,Private room,96.85714285714286
+150,Brooklyn,Coney Island,Entire home/apt,91.88888888888889
+151,Brooklyn,Coney Island,Private room,61.5
+152,Brooklyn,Crown Heights,Entire home/apt,160.49911190053285
+153,Brooklyn,Crown Heights,Private room,66.78664192949907
+154,Brooklyn,Crown Heights,Shared room,69.11111111111111
+155,Brooklyn,Cypress Hills,Entire home/apt,313.9032258064516
+156,Brooklyn,Cypress Hills,Private room,59.359375
+157,Brooklyn,Cypress Hills,Shared room,72.0
+158,Brooklyn,DUMBO,Entire home/apt,229.27272727272728
+159,Brooklyn,DUMBO,Private room,126.1
+160,Brooklyn,Downtown Brooklyn,Entire home/apt,158.52777777777777
+161,Brooklyn,Downtown Brooklyn,Private room,108.89473684210526
+162,Brooklyn,Downtown Brooklyn,Shared room,67.5
+163,Brooklyn,Dyker Heights,Entire home/apt,126.42857142857143
+164,Brooklyn,Dyker Heights,Private room,52.888888888888886
+165,Brooklyn,East Flatbush,Entire home/apt,124.69172932330827
+166,Brooklyn,East Flatbush,Private room,64.6923076923077
+167,Brooklyn,East Flatbush,Shared room,62.666666666666664
+168,Brooklyn,East New York,Entire home/apt,121.97979797979798
+169,Brooklyn,East New York,Private room,54.19512195121951
+170,Brooklyn,East New York,Shared room,82.0
+171,Brooklyn,Flatbush,Entire home/apt,157.95384615384614
+172,Brooklyn,Flatbush,Private room,64.18340611353712
+173,Brooklyn,Flatbush,Shared room,37.583333333333336
+174,Brooklyn,Flatlands,Entire home/apt,128.31578947368422
+175,Brooklyn,Flatlands,Private room,74.46875
+176,Brooklyn,Flatlands,Shared room,356.3333333333333
+177,Brooklyn,Fort Greene,Entire home/apt,181.2608695652174
+178,Brooklyn,Fort Greene,Private room,73.04301075268818
+179,Brooklyn,Fort Greene,Shared room,140.0
+180,Brooklyn,Fort Hamilton,Entire home/apt,132.56666666666666
+181,Brooklyn,Fort Hamilton,Private room,70.36363636363636
+182,Brooklyn,Fort Hamilton,Shared room,179.0
+183,Brooklyn,Gerritsen Beach,Private room,22.666666666666668
+184,Brooklyn,Gowanus,Entire home/apt,186.17142857142858
+185,Brooklyn,Gowanus,Hotel room,114.0
+186,Brooklyn,Gowanus,Private room,75.05263157894737
+187,Brooklyn,Gowanus,Shared room,51.75
+188,Brooklyn,Gravesend,Entire home/apt,117.8125
+189,Brooklyn,Gravesend,Private room,64.93103448275862
+190,Brooklyn,Gravesend,Shared room,32.333333333333336
+191,Brooklyn,Greenpoint,Entire home/apt,160.02862985685073
+192,Brooklyn,Greenpoint,Hotel room,197.0
+193,Brooklyn,Greenpoint,Private room,81.60596026490066
+194,Brooklyn,Greenpoint,Shared room,46.45454545454545
+195,Brooklyn,Kensington,Entire home/apt,133.0
+196,Brooklyn,Kensington,Private room,51.964285714285715
+197,Brooklyn,Kensington,Shared room,40.666666666666664
+198,Brooklyn,Manhattan Beach,Entire home/apt,95.0
+199,Brooklyn,Manhattan Beach,Private room,43.0
+200,Brooklyn,Midwood,Entire home/apt,97.3076923076923
+201,Brooklyn,Midwood,Private room,60.883720930232556
+202,Brooklyn,Midwood,Shared room,34.6
+203,Brooklyn,Mill Basin,Entire home/apt,70.0
+204,Brooklyn,Mill Basin,Private room,57.5
+205,Brooklyn,Mill Basin,Shared room,85.0
+206,Brooklyn,Navy Yard,Entire home/apt,144.5
+207,Brooklyn,Navy Yard,Private room,82.0
+208,Brooklyn,Park Slope,Entire home/apt,194.57303370786516
+209,Brooklyn,Park Slope,Hotel room,119.0
+210,Brooklyn,Park Slope,Private room,99.63636363636364
+211,Brooklyn,Park Slope,Shared room,47.0
+212,Brooklyn,Prospect Heights,Entire home/apt,190.90510948905109
+213,Brooklyn,Prospect Heights,Private room,71.1304347826087
+214,Brooklyn,Prospect-Lefferts Gardens,Entire home/apt,145.56218905472636
+215,Brooklyn,Prospect-Lefferts Gardens,Private room,61.02272727272727
+216,Brooklyn,Prospect-Lefferts Gardens,Shared room,22.0
+217,Brooklyn,Red Hook,Entire home/apt,188.65217391304347
+218,Brooklyn,Red Hook,Private room,63.88235294117647
+219,Brooklyn,Red Hook,Shared room,200.0
+220,Brooklyn,Sea Gate,Entire home/apt,486.4
+221,Brooklyn,Sea Gate,Private room,89.66666666666667
+222,Brooklyn,Sheepshead Bay,Entire home/apt,287.4852941176471
+223,Brooklyn,Sheepshead Bay,Private room,89.12
+224,Brooklyn,Sheepshead Bay,Shared room,34.5
+225,Brooklyn,South Slope,Entire home/apt,174.04794520547946
+226,Brooklyn,South Slope,Private room,75.44827586206897
+227,Brooklyn,South Slope,Shared room,80.0
+228,Brooklyn,Sunset Park,Entire home/apt,173.67153284671534
+229,Brooklyn,Sunset Park,Private room,61.50898203592814
+230,Brooklyn,Sunset Park,Shared room,28.666666666666668
+231,Brooklyn,Vinegar Hill,Entire home/apt,252.7058823529412
+232,Brooklyn,Vinegar Hill,Private room,118.8
+233,Brooklyn,Williamsburg,Entire home/apt,192.09698750918443
+234,Brooklyn,Williamsburg,Hotel room,0.0
+235,Brooklyn,Williamsburg,Private room,77.90868924889543
+236,Brooklyn,Williamsburg,Shared room,98.31818181818181
+237,Brooklyn,Windsor Terrace,Entire home/apt,159.96875
+238,Brooklyn,Windsor Terrace,Private room,61.16
+239,Manhattan,Battery Park City,Entire home/apt,204.48275862068965
+240,Manhattan,Battery Park City,Private room,95.83333333333333
+241,Manhattan,Battery Park City,Shared room,37.0
+242,Manhattan,Chelsea,Entire home/apt,237.00985221674875
+243,Manhattan,Chelsea,Hotel room,46.666666666666664
+244,Manhattan,Chelsea,Private room,131.15652173913043
+245,Manhattan,Chelsea,Shared room,73.7
+246,Manhattan,Chinatown,Entire home/apt,221.76666666666668
+247,Manhattan,Chinatown,Hotel room,322.0
+248,Manhattan,Chinatown,Private room,80.512
+249,Manhattan,Chinatown,Shared room,105.0
+250,Manhattan,Civic Center,Entire home/apt,268.76
+251,Manhattan,Civic Center,Private room,80.0
+252,Manhattan,East Harlem,Entire home/apt,177.5542521994135
+253,Manhattan,East Harlem,Private room,117.87186629526462
+254,Manhattan,East Harlem,Shared room,49.09090909090909
+255,Manhattan,East Village,Entire home/apt,204.3526627218935
+256,Manhattan,East Village,Private room,129.35698924731182
+257,Manhattan,East Village,Shared room,82.75
+258,Manhattan,Financial District,Entire home/apt,204.28455284552845
+259,Manhattan,Financial District,Hotel room,255.89473684210526
+260,Manhattan,Financial District,Private room,123.11009174311927
+261,Manhattan,Financial District,Shared room,77.11111111111111
+262,Manhattan,Flatiron District,Entire home/apt,344.7450980392157
+263,Manhattan,Flatiron District,Hotel room,110.33333333333333
+264,Manhattan,Flatiron District,Private room,288.35714285714283
+265,Manhattan,Gramercy,Entire home/apt,232.9030303030303
+266,Manhattan,Gramercy,Private room,86.4
+267,Manhattan,Gramercy,Shared room,529.5
+268,Manhattan,Greenwich Village,Entire home/apt,291.11917098445593
+269,Manhattan,Greenwich Village,Hotel room,189.5
+270,Manhattan,Greenwich Village,Private room,158.53424657534248
+271,Manhattan,Greenwich Village,Shared room,33.0
+272,Manhattan,Harlem,Entire home/apt,165.46577017114913
+273,Manhattan,Harlem,Hotel room,125.0
+274,Manhattan,Harlem,Private room,77.94223826714801
+275,Manhattan,Harlem,Shared room,78.95833333333333
+276,Manhattan,Hell's Kitchen,Entire home/apt,212.30518819938962
+277,Manhattan,Hell's Kitchen,Hotel room,871.0769230769231
+278,Manhattan,Hell's Kitchen,Private room,127.86116700201207
+279,Manhattan,Hell's Kitchen,Shared room,109.0
+280,Manhattan,Inwood,Entire home/apt,101.5
+281,Manhattan,Inwood,Private room,54.90721649484536
+282,Manhattan,Inwood,Shared room,43.6
+283,Manhattan,Kips Bay,Entire home/apt,202.01993355481727
+284,Manhattan,Kips Bay,Hotel room,0.0
+285,Manhattan,Kips Bay,Private room,126.27956989247312
+286,Manhattan,Kips Bay,Shared room,254.25
+287,Manhattan,Little Italy,Entire home/apt,168.96511627906978
+288,Manhattan,Little Italy,Private room,91.1
+289,Manhattan,Lower East Side,Entire home/apt,221.19437340153453
+290,Manhattan,Lower East Side,Hotel room,602.3333333333334
+291,Manhattan,Lower East Side,Private room,208.07604562737643
+292,Manhattan,Lower East Side,Shared room,79.33333333333333
+293,Manhattan,Marble Hill,Entire home/apt,124.5
+294,Manhattan,Marble Hill,Private room,55.6
+295,Manhattan,Midtown,Entire home/apt,248.44834930777424
+296,Manhattan,Midtown,Hotel room,282.6623376623377
+297,Manhattan,Midtown,Private room,219.8568075117371
+298,Manhattan,Midtown,Shared room,90.9375
+299,Manhattan,Morningside Heights,Entire home/apt,150.045871559633
+300,Manhattan,Morningside Heights,Private room,79.13235294117646
+301,Manhattan,Murray Hill,Entire home/apt,181.0029761904762
+302,Manhattan,Murray Hill,Hotel room,97.4
+303,Manhattan,Murray Hill,Private room,135.6271186440678
+304,Manhattan,Murray Hill,Shared room,1207.6666666666667
+305,Manhattan,NoHo,Entire home/apt,245.92857142857142
+306,Manhattan,NoHo,Private room,114.25
+307,Manhattan,Nolita,Entire home/apt,222.43971631205673
+308,Manhattan,Nolita,Private room,99.1639344262295
+309,Manhattan,Nolita,Shared room,76.66666666666667
+310,Manhattan,Roosevelt Island,Entire home/apt,246.0
+311,Manhattan,Roosevelt Island,Private room,83.57894736842105
+312,Manhattan,Roosevelt Island,Shared room,48.0
+313,Manhattan,SoHo,Entire home/apt,332.2994350282486
+314,Manhattan,SoHo,Hotel room,275.5238095238095
+315,Manhattan,SoHo,Private room,134.63529411764705
+316,Manhattan,SoHo,Shared room,100.0
+317,Manhattan,Stuyvesant Town,Entire home/apt,323.2083333333333
+318,Manhattan,Stuyvesant Town,Private room,101.0
+319,Manhattan,Stuyvesant Town,Shared room,71.66666666666667
+320,Manhattan,Theater District,Entire home/apt,254.87596899224806
+321,Manhattan,Theater District,Hotel room,322.75
+322,Manhattan,Theater District,Private room,238.67924528301887
+323,Manhattan,Theater District,Shared room,66.0
+324,Manhattan,Tribeca,Entire home/apt,445.93548387096774
+325,Manhattan,Tribeca,Private room,162.66666666666666
+326,Manhattan,Two Bridges,Entire home/apt,136.24
+327,Manhattan,Two Bridges,Hotel room,0.0
+328,Manhattan,Two Bridges,Private room,81.1951219512195
+329,Manhattan,Upper East Side,Entire home/apt,188.29289099526068
+330,Manhattan,Upper East Side,Private room,130.10752688172042
+331,Manhattan,Upper East Side,Shared room,83.52
+332,Manhattan,Upper West Side,Entire home/apt,252.07384615384615
+333,Manhattan,Upper West Side,Hotel room,368.72727272727275
+334,Manhattan,Upper West Side,Private room,100.82599580712788
+335,Manhattan,Upper West Side,Shared room,95.75
+336,Manhattan,Washington Heights,Entire home/apt,133.31219512195122
+337,Manhattan,Washington Heights,Private room,70.33165829145729
+338,Manhattan,Washington Heights,Shared room,314.6
+339,Manhattan,West Village,Entire home/apt,239.2966601178782
+340,Manhattan,West Village,Hotel room,114.0
+341,Manhattan,West Village,Private room,135.26136363636363
+342,Manhattan,West Village,Shared room,230.0
+343,Queens,Arverne,Entire home/apt,274.48837209302326
+344,Queens,Arverne,Private room,73.45
+345,Queens,Astoria,Entire home/apt,165.30041152263374
+346,Queens,Astoria,Hotel room,100.0
+347,Queens,Astoria,Private room,70.33333333333333
+348,Queens,Astoria,Shared room,126.14285714285714
+349,Queens,Bay Terrace,Entire home/apt,176.0
+350,Queens,Bay Terrace,Private room,94.5
+351,Queens,Bayside,Entire home/apt,320.06666666666666
+352,Queens,Bayside,Hotel room,118.0
+353,Queens,Bayside,Private room,80.73684210526316
+354,Queens,Bayside,Shared room,55.0
+355,Queens,Bayswater,Entire home/apt,60.0
+356,Queens,Bayswater,Private room,75.21428571428571
+357,Queens,Belle Harbor,Entire home/apt,322.5
+358,Queens,Belle Harbor,Private room,194.5
+359,Queens,Bellerose,Entire home/apt,139.33333333333334
+360,Queens,Bellerose,Private room,72.25
+361,Queens,Briarwood,Entire home/apt,111.07692307692308
+362,Queens,Briarwood,Private room,559.7222222222222
+363,Queens,Briarwood,Shared room,85.0
+364,Queens,Cambria Heights,Entire home/apt,153.22222222222223
+365,Queens,Cambria Heights,Private room,70.58333333333333
+366,Queens,College Point,Entire home/apt,153.58333333333334
+367,Queens,College Point,Private room,60.63636363636363
+368,Queens,College Point,Shared room,50.0
+369,Queens,Corona,Entire home/apt,148.28571428571428
+370,Queens,Corona,Private room,55.0
+371,Queens,Corona,Shared room,49.166666666666664
+372,Queens,Ditmars Steinway,Entire home/apt,124.48936170212765
+373,Queens,Ditmars Steinway,Private room,67.30578512396694
+374,Queens,Ditmars Steinway,Shared room,72.5
+375,Queens,Douglaston,Entire home/apt,106.0
+376,Queens,Douglaston,Private room,95.0
+377,Queens,East Elmhurst,Entire home/apt,120.78181818181818
+378,Queens,East Elmhurst,Private room,58.2962962962963
+379,Queens,East Elmhurst,Shared room,49.0
+380,Queens,Edgemere,Entire home/apt,155.2
+381,Queens,Edgemere,Private room,45.6
+382,Queens,Elmhurst,Entire home/apt,165.8
+383,Queens,Elmhurst,Private room,52.62643678160919
+384,Queens,Elmhurst,Shared room,33.6
+385,Queens,Far Rockaway,Entire home/apt,239.36363636363637
+386,Queens,Far Rockaway,Private room,64.5
+387,Queens,Far Rockaway,Shared room,70.0
+388,Queens,Flushing,Entire home/apt,191.6024096385542
+389,Queens,Flushing,Private room,65.06513409961686
+390,Queens,Flushing,Shared room,174.0
+391,Queens,Forest Hills,Entire home/apt,187.54545454545453
+392,Queens,Forest Hills,Private room,72.57446808510639
+393,Queens,Forest Hills,Shared room,70.5
+394,Queens,Fresh Meadows,Entire home/apt,180.28571428571428
+395,Queens,Fresh Meadows,Private room,60.8
+396,Queens,Fresh Meadows,Shared room,80.0
+397,Queens,Glendale,Entire home/apt,99.3125
+398,Queens,Glendale,Private room,50.13333333333333
+399,Queens,Hollis,Entire home/apt,115.75
+400,Queens,Hollis,Private room,64.5
+401,Queens,Holliswood,Entire home/apt,430.0
+402,Queens,Holliswood,Private room,89.5
+403,Queens,Holliswood,Shared room,16.0
+404,Queens,Howard Beach,Entire home/apt,139.7
+405,Queens,Howard Beach,Private room,88.6
+406,Queens,Jackson Heights,Entire home/apt,120.14285714285714
+407,Queens,Jackson Heights,Private room,54.06849315068493
+408,Queens,Jackson Heights,Shared room,53.333333333333336
+409,Queens,Jamaica,Entire home/apt,168.59420289855072
+410,Queens,Jamaica,Private room,63.111111111111114
+411,Queens,Jamaica,Shared room,33.25
+412,Queens,Jamaica Estates,Entire home/apt,215.0
+413,Queens,Jamaica Estates,Private room,321.1666666666667
+414,Queens,Jamaica Estates,Shared room,106.2
+415,Queens,Jamaica Hills,Entire home/apt,139.5
+416,Queens,Jamaica Hills,Private room,69.25
+417,Queens,Kew Gardens,Entire home/apt,136.9
+418,Queens,Kew Gardens,Private room,76.04545454545455
+419,Queens,Kew Gardens Hills,Entire home/apt,118.21428571428571
+420,Queens,Kew Gardens Hills,Private room,60.666666666666664
+421,Queens,Kew Gardens Hills,Shared room,90.0
+422,Queens,Laurelton,Entire home/apt,116.6
+423,Queens,Laurelton,Private room,53.23529411764706
+424,Queens,Little Neck,Entire home/apt,90.0
+425,Queens,Little Neck,Private room,72.5
+426,Queens,Little Neck,Shared room,32.0
+427,Queens,Long Island City,Entire home/apt,226.04545454545453
+428,Queens,Long Island City,Hotel room,143.71428571428572
+429,Queens,Long Island City,Private room,97.12820512820512
+430,Queens,Long Island City,Shared room,469.4230769230769
+431,Queens,Maspeth,Entire home/apt,148.96666666666667
+432,Queens,Maspeth,Private room,62.19672131147541
+433,Queens,Maspeth,Shared room,44.5
+434,Queens,Middle Village,Entire home/apt,169.77777777777777
+435,Queens,Middle Village,Private room,89.66666666666667
+436,Queens,Neponsit,Entire home/apt,350.0
+437,Queens,Ozone Park,Entire home/apt,114.47368421052632
+438,Queens,Ozone Park,Private room,78.0
+439,Queens,Ozone Park,Shared room,41.666666666666664
+440,Queens,Queens Village,Entire home/apt,171.73529411764707
+441,Queens,Queens Village,Private room,51.166666666666664
+442,Queens,Queens Village,Shared room,68.33333333333333
+443,Queens,Rego Park,Entire home/apt,163.30769230769232
+444,Queens,Rego Park,Private room,79.36363636363636
+445,Queens,Rego Park,Shared room,68.0
+446,Queens,Richmond Hill,Entire home/apt,123.44444444444444
+447,Queens,Richmond Hill,Private room,68.3
+448,Queens,Richmond Hill,Shared room,123.0
+449,Queens,Ridgewood,Entire home/apt,131.46153846153845
+450,Queens,Ridgewood,Private room,59.30285714285714
+451,Queens,Ridgewood,Shared room,20.0
+452,Queens,Rockaway Beach,Entire home/apt,174.85714285714286
+453,Queens,Rockaway Beach,Private room,103.41666666666667
+454,Queens,Rosedale,Entire home/apt,118.0
+455,Queens,Rosedale,Private room,63.27777777777778
+456,Queens,South Ozone Park,Entire home/apt,113.0
+457,Queens,South Ozone Park,Private room,80.38888888888889
+458,Queens,Springfield Gardens,Entire home/apt,134.1578947368421
+459,Queens,Springfield Gardens,Private room,65.14285714285714
+460,Queens,Springfield Gardens,Shared room,200.0
+461,Queens,St. Albans,Entire home/apt,149.85185185185185
+462,Queens,St. Albans,Private room,85.04761904761905
+463,Queens,St. Albans,Shared room,54.666666666666664
+464,Queens,Sunnyside,Entire home/apt,127.71
+465,Queens,Sunnyside,Private room,74.81564245810056
+466,Queens,Sunnyside,Shared room,161.85714285714286
+467,Queens,Whitestone,Entire home/apt,150.0
+468,Queens,Whitestone,Private room,81.0
+469,Queens,Woodhaven,Entire home/apt,118.04761904761905
+470,Queens,Woodhaven,Private room,51.30952380952381
+471,Queens,Woodhaven,Shared room,28.0
+472,Queens,Woodside,Entire home/apt,136.86206896551724
+473,Queens,Woodside,Private room,38.99652777777778
+474,Queens,Woodside,Shared room,72.5
+475,Staten Island,Arden Heights,Entire home/apt,125.0
+476,Staten Island,Arden Heights,Private room,36.0
+477,Staten Island,Arrochar,Entire home/apt,134.25
+478,Staten Island,Arrochar,Private room,45.0
+479,Staten Island,Bull's Head,Entire home/apt,60.0
+480,Staten Island,Bull's Head,Private room,46.0
+481,Staten Island,Castleton Corners,Entire home/apt,123.0
+482,Staten Island,Castleton Corners,Private room,75.0
+483,Staten Island,Clifton,Entire home/apt,119.4
+484,Staten Island,Clifton,Private room,70.33333333333333
+485,Staten Island,Concord,Entire home/apt,126.25
+486,Staten Island,Concord,Private room,63.2
+487,Staten Island,Dongan Hills,Entire home/apt,124.0
+488,Staten Island,Eltingville,Entire home/apt,188.0
+489,Staten Island,Eltingville,Private room,53.0
+490,Staten Island,Emerson Hill,Entire home/apt,57.5
+491,Staten Island,Emerson Hill,Private room,66.5
+492,Staten Island,Fort Wadsworth,Entire home/apt,800.0
+493,Staten Island,Graniteville,Entire home/apt,100.0
+494,Staten Island,Graniteville,Private room,41.0
+495,Staten Island,Grant City,Entire home/apt,93.25
+496,Staten Island,Grant City,Private room,33.75
+497,Staten Island,Great Kills,Entire home/apt,100.0
+498,Staten Island,Great Kills,Private room,72.0
+499,Staten Island,Grymes Hill,Entire home/apt,138.55555555555554
+500,Staten Island,Howland Hook,Entire home/apt,152.5
+501,Staten Island,Huguenot,Entire home/apt,180.0
+502,Staten Island,Lighthouse Hill,Entire home/apt,200.0
+503,Staten Island,Mariners Harbor,Entire home/apt,105.0
+504,Staten Island,Mariners Harbor,Private room,55.5
+505,Staten Island,Midland Beach,Entire home/apt,142.75
+506,Staten Island,Midland Beach,Private room,80.0
+507,Staten Island,New Brighton,Entire home/apt,1200.0
+508,Staten Island,New Brighton,Private room,52.6
+509,Staten Island,New Dorp,Entire home/apt,107.5
+510,Staten Island,New Dorp Beach,Entire home/apt,130.0
+511,Staten Island,New Dorp Beach,Private room,68.33333333333333
+512,Staten Island,New Springville,Entire home/apt,112.0
+513,Staten Island,New Springville,Private room,68.0
+514,Staten Island,Oakwood,Entire home/apt,128.66666666666666
+515,Staten Island,Oakwood,Private room,150.0
+516,Staten Island,Port Richmond,Entire home/apt,54.0
+517,Staten Island,Port Richmond,Private room,48.4
+518,Staten Island,Prince's Bay,Entire home/apt,397.5
+519,Staten Island,Randall Manor,Entire home/apt,190.42857142857142
+520,Staten Island,Randall Manor,Private room,318.0
+521,Staten Island,Richmondtown,Entire home/apt,68.0
+522,Staten Island,Richmondtown,Private room,105.0
+523,Staten Island,Rosebank,Entire home/apt,139.33333333333334
+524,Staten Island,Rosebank,Private room,60.0
+525,Staten Island,Rossville,Entire home/apt,80.0
+526,Staten Island,Shore Acres,Entire home/apt,175.0
+527,Staten Island,Shore Acres,Private room,96.5
+528,Staten Island,Shore Acres,Shared room,82.0
+529,Staten Island,Silver Lake,Entire home/apt,88.5
+530,Staten Island,South Beach,Private room,54.333333333333336
+531,Staten Island,St. George,Entire home/apt,112.1
+532,Staten Island,St. George,Private room,66.91666666666667
+533,Staten Island,St. George,Shared room,79.0
+534,Staten Island,Stapleton,Entire home/apt,183.33333333333334
+535,Staten Island,Stapleton,Private room,114.4
+536,Staten Island,Todt Hill,Entire home/apt,69.0
+537,Staten Island,Todt Hill,Private room,185.0
+538,Staten Island,Tompkinsville,Entire home/apt,131.92857142857142
+539,Staten Island,Tompkinsville,Private room,52.6875
+540,Staten Island,Tottenville,Entire home/apt,309.0
+541,Staten Island,West Brighton,Entire home/apt,139.8
+542,Staten Island,West Brighton,Private room,61.69230769230769
+543,Staten Island,Westerleigh,Entire home/apt,120.66666666666667
+544,Staten Island,Willowbrook,Entire home/apt,309.0
+545,Staten Island,Woodrow,Entire home/apt,255.0
