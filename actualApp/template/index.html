@@ -20,21 +20,21 @@
 
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="../static/css/style1.css">
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">  
+    <!--<link rel="stylesheet" type="text/css" href="../static/css/style.css">  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    
+  
 
 </head>
 
 
 <body>
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Content Wrapper 
+        <div id="content-wrapper" class="d-flex flex-column">-->
 
+    
             <!--NavBar-->
                 <nav class="navbar navbar-light" style="background-color: #fdfcfb;">
                     <h3 style="font-family:'Airbnb Cereal App Light'; font-weight:bold;font-size:30px;color:#FF5A5F">NYC Airbnb Data Analysis</h3>
@@ -67,10 +67,10 @@
             
                 <!-- Begin Page Content -->
  
-                <!-- Content Row -->
+                <!-- Content Row 
                 <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 10 }'>
                         
-                       <!--  # of BOROUGHS -->
+                        # of BOROUGHS 
                         <div class="grid-item">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
@@ -89,7 +89,7 @@
                             </div>  
                         </div> 
 
-                        <!-- # of NEIGHBOURHOODS -->
+                         # of NEIGHBOURHOODS 
                         <div class="grid-item">
                             <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
@@ -105,11 +105,47 @@
                                     </div>
                                 </div>  
                             </div>
-                        </div>
+                        </div> -->
+<div class="container">
 
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 50 }'>
+
+        <div class="grid-item">
+            <div class="grid-item-content">
+                <img src = "/static/css/piegraph.png" /> 
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="grid-item-content">
+                <img src = "/static/css/barplot.png" />
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="grid-item-content">
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="grid-item-content">
+                <img src = "/static/css/bubblechart.png" />
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <div class="grid-item-content">
+                <img src = "/static/css/lineplot.png" />
+            </div>
+        </div>
+       
+        
+    </div>
+</div>
 
                     
-                        <!-- # of ROOM TYPES -->
+                        <!-- # of ROOM TYPES 
                         <div class="grid-item">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
@@ -129,8 +165,8 @@
                        
 
                     
-                        <!-- GRAPHS -->
-                        <!-- Line Plot-->
+                         GRAPHS 
+                        Line Plot
                         <div class="grid-item">  
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -142,7 +178,7 @@
                             </div>
                         </div>         
                             
-                        <!-- Pie Graph-->
+                        Pie Graph
                         <div class="grid-item grid-item--width2">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -154,7 +190,7 @@
                             </div>
                         </div>      
 
-                        <!-- # of LISTINGS -->
+                       # of LISTINGS
                         <div class="grid-item">
                             <div class="card border-left-info shadow h-100 py-2">
                                 <div class="card-body">
@@ -179,7 +215,7 @@
                             </div>
                         </div>
 
-                        <!-- Bar Graph-->
+                        Bar Graph
                         <div class="grid-item">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -191,7 +227,7 @@
                             </div>
                         </div>         
 
-                        <!-- Bubble Chart-->
+                    Bubble Chart
                         <div class="grid-item">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
@@ -203,7 +239,7 @@
                             </div>
                         </div>          
                     
-                        <!-- Marker Cluster -->
+                        Marker Cluster 
                         <div class="grid-item">
                             <div class="card shadow mb-8">
                                 <div class="card-header py-3">
@@ -220,10 +256,14 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            
-        </div>
-    
+                </div>-->
+   
+   </div>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
+   <script src="http://masonry.desandro.com/components/classie/classie.js"></script>
+
+        
 </body>
     
 
@@ -256,6 +296,7 @@ crossorigin=""></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
