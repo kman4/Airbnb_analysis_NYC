@@ -54,8 +54,8 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 
 
 ## Team Members 
-Caitlain Beachey - HTML
-Amaris Hassan - Data Research and Presenter
-Cecilia Leung - Data Visualizations
-Hillary Mandich - Project Coordinator
-Kapil Pundhir - ETL Specialist
+Caitlain Beachey - HTML<br>
+Amaris Hassan - Data Research and Presenter<br>
+Cecilia Leung - Data Visualizations<br>
+Hillary Mandich - Project Coordinator<br>
+Kapil Pundhir - ETL Specialist<br>
