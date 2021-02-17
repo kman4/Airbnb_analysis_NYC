@@ -37,7 +37,7 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 * Choropleth map for Rates by Neighbourhood & Room Type
 * Marker Cluster map that shows all the listings in New York City
   
-**Interactive **
+**Interactive**
   * Choropleth map that provides Rates by Neighbourhood & Room Type
   * This can be view in Gray Scale, Dark Scale and Street Mode settings.
   * Toggle between the different layers of average rates by neighbourhood, entire home/apt, hotel room, private room and shared room.
