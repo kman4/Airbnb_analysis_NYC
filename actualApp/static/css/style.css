@@ -309,23 +309,21 @@ fieldset {
   margin: 0;
   border: 0;
 }
+.legend {
+  padding: 10px;
+  line-height: 21px;
+  color: gray;
+  background-color: white;
+  border-radius: 5px;
+}
 
- .legend {
-    padding: 10px;
-    line-height: 21px;
-    color: gray;
-    background-color: white;
-    border-radius: 5px;
-  }
-  
-  .legend i {
-    width: 30px;
-    height: 10px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
-  }
-
+.legend i {
+  width: 30px;
+  height: 20px;
+  float: left;
+  margin-right: 8px;
+  opacity: 1;
+}
 progress {
   vertical-align: baseline;
 }
@@ -9757,6 +9755,7 @@ body {
   height: 100%;
 }
 
+
 a:focus {
   outline: none;
 }
@@ -10795,7 +10794,7 @@ a:focus {
 
 .chart-area {
   position: relative;
-  height: 10rem;
+  height: 20rem;
   width: 100%;
 }
 
@@ -10819,7 +10818,7 @@ a:focus {
 
 .chart-pie {
   position: relative;
-  height: 100rem;
+  height: 10rem;
   width: 100%;
 }
 

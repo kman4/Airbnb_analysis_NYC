@@ -73,7 +73,7 @@ layers: [grayScale, rates_neighbourhood]
   legend.onAdd = function (map) {
   // create a div for the legend
       var div = L.DomUtil.create('div', 'info legend');
-          div.innerHTML += "<b>Average Rates by Neighbourhood</p>";
+          div.innerHTML += "<b>Rates</p>";
           grades = [0, 50, 100, 150, 200, 250, 300, 800]
           labels = ["<50", "50-100", "100-150", "150-200", "200-250", "250-300", "300+", "N/A"]
           color = ["#C7E9C0","#A1D99B","#74C476","#41AB5D","#238B45","#006D2C", "#145A32", "#A6ACAF"]
@@ -150,7 +150,7 @@ d3.json(url3, function(data){
           weight: 2,
           opacity: 0.8,
           color: 'gray',
-          fillOpacity: 0.7
+          fillOpacity: 1
       }
   }
   
@@ -226,7 +226,7 @@ d3.json(url4, function(data){
             weight: 2,
              opacity: 0.8,
             color: 'gray',
-            fillOpacity: 0.7
+            fillOpacity: 1
             }
         }
       
@@ -302,7 +302,7 @@ d3.json(url5, function(data){
           weight: 2,
           opacity: 0.8,
           color: 'gray',
-          fillOpacity: 0.7
+          fillOpacity: 1
       }
   }
       
@@ -374,7 +374,7 @@ d3.json(url6, function(data){
           weight: 2,
           opacity: 0.8,
           color: 'gray',
-          fillOpacity: 0.7
+          fillOpacity: 1
       }
   }
       
@@ -447,7 +447,7 @@ d3.json(url7, function(data){
           weight: 2,
           opacity: 0.8,
           color: 'gray',
-          fillOpacity: 0.7
+          fillOpacity: 1
       }
   }
       
