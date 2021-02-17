@@ -1,5 +1,5 @@
 # Airbnb Analysis - New York City
-![Image](https://cleaningbusinesstoday.com/wp-content/uploads/EasyDNNNews/1937/600600p3069EDNmain1937airbnb-nyc-600-x-250.jpg)
+![Image](https://www.newyorkhotels.org//img_new/top_banner2.png)
 
 ## Background
 
