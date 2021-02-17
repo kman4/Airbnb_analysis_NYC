@@ -310,18 +310,6 @@ fieldset {
   border: 0;
 }
 
-legend {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  color: inherit;
-  white-space: normal;
-}
-
  .legend {
     padding: 10px;
     line-height: 21px;
@@ -332,7 +320,7 @@ legend {
   
   .legend i {
     width: 30px;
-    height: 20px;
+    height: 10px;
     float: left;
     margin-right: 8px;
     opacity: 0.7;
@@ -11261,8 +11249,3 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
-#map,
-  body,
-  html {
-    height: 200%;
-  }
