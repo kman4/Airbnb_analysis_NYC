@@ -68,7 +68,7 @@ layers: [grayScale, rates_neighbourhood]
   
   
 //  add the legend to the map
-  var legend = L.control({position: 'bottomright'});
+  var legend = L.control({position: 'bottomleft'});
 
   legend.onAdd = function (map) {
   // create a div for the legend
