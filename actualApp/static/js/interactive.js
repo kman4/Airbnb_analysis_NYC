@@ -56,12 +56,12 @@ function createMap() {
     };
   
   
-      // Creating map object
-      var myMap = L.map('mapid', {
-        center: [40.7, -73.95],
-        zoom: 11, 
-        layers: [grayScale, rates_neighbourhood]
-      });
+// Creating map object
+var myMap = L.map('mapid', {
+center: [40.7, -73.95],
+zoom: 11, 
+layers: [grayScale, rates_neighbourhood]
+});
   
     L.control.layers(baseMaps, overlayMaps).addTo(myMap);
   

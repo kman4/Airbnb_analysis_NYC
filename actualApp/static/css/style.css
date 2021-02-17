@@ -322,6 +322,22 @@ legend {
   white-space: normal;
 }
 
+ .legend {
+    padding: 10px;
+    line-height: 21px;
+    color: gray;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .legend i {
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+  }
+
 progress {
   vertical-align: baseline;
 }
@@ -10815,7 +10831,7 @@ a:focus {
 
 .chart-pie {
   position: relative;
-  height: 50rem;
+  height: 100rem;
   width: 100%;
 }
 
