@@ -59,7 +59,7 @@ function createMap() {
 // Creating map object
 var myMap = L.map('mapid', {
 center: [40.7, -73.95],
-zoom: 10, 
+zoom: 11, 
 layers: [grayScale, rates_neighbourhood]
 });
   
@@ -68,7 +68,7 @@ layers: [grayScale, rates_neighbourhood]
   
   
 //  add the legend to the map
-  var legend = L.control({position: 'bottomleft'});
+  var legend = L.control({position: 'topright'});
 
   legend.onAdd = function (map) {
   // create a div for the legend
