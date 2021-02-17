@@ -59,7 +59,7 @@ function createMap() {
 // Creating map object
 var myMap = L.map('mapid', {
 center: [40.7, -73.95],
-zoom: 11, 
+zoom: 9, 
 layers: [grayScale, rates_neighbourhood]
 });
   
@@ -121,7 +121,7 @@ d3.json(url3, function(data){
 
     // add the popup to the map and set location
     layer.bindPopup(popupHtml, {
-        closeButton: true,
+        closeButton: false,
         offset: L.point(0, -20)
         });
 
@@ -195,7 +195,7 @@ d3.json(url4, function(data){
 
             // add the popup to the map and set location
             layer.bindPopup(popupHtml1, {
-                closeButton: true,
+                closeButton: false,
                 offset: L.point(0, -20)
                 });
 
@@ -271,7 +271,7 @@ d3.json(url5, function(data){
 
             // add the popup to the map and set location
             layer.bindPopup(popupHtml2, {
-                closeButton: true,
+                closeButton: false,
                 offset: L.point(0, -20)
                 });
 
@@ -343,7 +343,7 @@ d3.json(url6, function(data){
 
             // add the popup to the map and set location
             layer.bindPopup(popupHtml3, {
-                closeButton: true,
+                closeButton: false,
                 offset: L.point(0, -20)
                 });
 
@@ -416,7 +416,7 @@ d3.json(url7, function(data){
 
             // add the popup to the map and set location
             layer.bindPopup(popupHtml4, {
-                closeButton: true,
+                closeButton: false,
                 offset: L.point(0, -20)
                 });
 
