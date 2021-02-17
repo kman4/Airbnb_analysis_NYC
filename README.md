@@ -43,7 +43,7 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
   * Toggle between the different layers of average rates by neighbourhood, entire home/apt, hotel room, private room and shared room.
 
 **Graphs**
-  * Provides a dropdown menu for each borough to see:
+  * Provides a dropdown menu to see information for each borough:
     * Total # of Neighbourhoods Listed
     * Total # of Listing
     * Total # of Reviews
