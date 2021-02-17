@@ -32,8 +32,8 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 ## Analysis
 
 [**Dashboard**](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
+* Provides summary of # of boroughs, # listed neighbourhoods, # of listings, and # of room_types
 * Provides links of various graphs for different boroughs
- 
 * Choropleth map for Rates by Neighbourhood & Room Type
 * Marker Cluster map that shows all the listings in New York City
   
