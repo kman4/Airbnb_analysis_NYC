@@ -21,7 +21,7 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 ## Requirements
 
 * Conduct ETL process so the data gets loaded into PostgreSQL Database.
-* Jsonify Data using Panadas by connecting to the PostgreSQL Database.
+* Jsonify Data using Pandas by connecting to the PostgreSQL Database.
 * Create Flask App with different routes to capture viewing pages and json routes. 
 * Using javascript and html to create visualizations from Airbnb Datasets using Plotly, Leaflet, and Bootstrap.
 * Deploy the flask app to heroku.
@@ -32,8 +32,8 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 ## Analysis
 
 [**Dashboard**](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
+* Provides summary of # of boroughs, # listed neighbourhoods, # of listings, and # of room_types
 * Provides links of various graphs for different boroughs
- 
 * Choropleth map for Rates by Neighbourhood & Room Type
 * Marker Cluster map that shows all the listings in New York City
   
@@ -54,8 +54,8 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 
 
 ## Team Members 
-Caitlain Beachey - HTML Developer <br>
-Amaris Hassan - Data Research and Presenter<br>
-Cecilia Leung - Data Visualizations Specialist<br>
-Hillary Mandich - Project Coordinator<br>
-Kapil Pundhir - ETL Specialist<br>
+**Caitlain Beachey** - HTML Developer <br>
+**Amaris Hassan** - Data Research Specialist and Presenter<br>
+**Cecilia Leung** - Data Visualizations Specialist<br>
+**Hillary Mandich** - Project Coordinator<br>
+**Kapil Pundhir** - ETL Specialist and Web Quality Assurance<br>
