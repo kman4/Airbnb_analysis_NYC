@@ -1,7 +1,7 @@
 # Airbnb Analysis - New York City
+![Image](https://cleaningbusinesstoday.com/wp-content/uploads/EasyDNNNews/1937/600600p3069EDNmain1937airbnb-nyc-600-x-250.jpg)
 
 ## Background
-![Image](https://cleaningbusinesstoday.com/wp-content/uploads/EasyDNNNews/1937/600600p3069EDNmain1937airbnb-nyc-600-x-250.jpg)
 
 The purpose of this project is to conduct a thorough analysis of the New York City Airbnb listings in 2021.  We must obtain datasets from external sources, perform an analysis fwith interactive visualizations and deploy this in a Heroku app.  
 
