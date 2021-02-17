@@ -4,7 +4,7 @@ const url2 = "/api/map"
 // Creating map object
 var myMap = L.map("map", {
   center: [40.7, -73.95],
-  zoom: 10
+  zoom: 11
 });
 
 // Adding tile layer to the map
