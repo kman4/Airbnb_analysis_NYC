@@ -21,7 +21,7 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 ## Requirements
 
 * Conduct ETL process so the data gets loaded into PostgreSQL Database.
-* Jsonify Data using Panadas by connecting to the PostgreSQL Database.
+* Jsonify Data using Pandas by connecting to the PostgreSQL Database.
 * Create Flask App with different routes to capture viewing pages and json routes. 
 * Using javascript and html to create visualizations from Airbnb Datasets using Plotly, Leaflet, and Bootstrap.
 * Deploy the flask app to heroku.
