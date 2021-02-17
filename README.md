@@ -46,7 +46,7 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
   * Provides a dropdown menu for each borough to see:
     * Total # of Neighbourhoods Listed
     * Total # of Listing
-    # Total # of Reviews
+    * Total # of Reviews
     * Rates 2017-2021
     * Room Type Distribution
     * Top 15 Neighbourhoods
