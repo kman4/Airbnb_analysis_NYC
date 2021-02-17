@@ -11261,3 +11261,8 @@ body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
 
+#map,
+  body,
+  html {
+    height: 100%;
+  }
