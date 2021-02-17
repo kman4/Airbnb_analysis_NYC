@@ -59,7 +59,7 @@ function createMap() {
 // Creating map object
 var myMap = L.map('mapid', {
 center: [40.7, -73.95],
-zoom: 9, 
+zoom: 10, 
 layers: [grayScale, rates_neighbourhood]
 });
   
