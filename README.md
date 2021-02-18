@@ -53,9 +53,9 @@ The choropleth map enables the user to see the map in different views by choosin
 
 The analysis allows the use the drop down menu to get Airbnb information for the 5 borough in New York City.
 
-![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/InkedDropdown_LI.jpg)
-
 * **Total # Listed Neighbourhoods, Total # Listings, and Total # of Reviews**
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Indicators.png)
 
 * **Rates by Year**
+
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Line.png)
