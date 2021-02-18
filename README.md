@@ -36,6 +36,8 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 ## Heroku Application
 [https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
 
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Dashboard.png)
+
 ## Data Visualizations
 
 ### Neighbourhood Analysis with Maps
