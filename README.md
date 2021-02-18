@@ -36,14 +36,14 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 
 ### Neighbourhood Analysis with Maps
 
-**1.  Airbnb Listing Details**
+**Airbnb Listing Details**
 
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Marker%20Cluster.png)
 
 The marker cluster map shows the number of listing within the different boroughs and neighbourhoods in New York City.  As you zoom in the map, the number circle spreads out and you will see blue markers where the exact listing is locating.  You can click on the blue marker and find the infomration of that specific listing.  You can even click on "More info" and it will direct you to the Airbnb link to that specific listing.
 
 
-**2.  Airbnb Rates by Neighbourhood and Room Types**
+**Airbnb Rates by Neighbourhood and Room Types**
 
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Chropleth.png)
 
@@ -55,6 +55,6 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/InkedDropdown_LI.jpg)
 
-**1.  Total # Listed Neighbourhoods, Total # Listings, and Total # of Reviews**
+**Total # Listed Neighbourhoods, Total # Listings, and Total # of Reviews**
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Indicators.png)
 
