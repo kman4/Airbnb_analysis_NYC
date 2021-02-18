@@ -59,3 +59,15 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 * **Rates by Year**
 
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Line.png)
+
+* **Room Type Distribution**
+
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Pie.png)
+
+* **15 Neighbourhoods that are Most Reviewed**
+
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Bar.png)
+
+* **Top 5 Neighbourhoods with the Most Superhost Listings**
+
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Bubble.png)
