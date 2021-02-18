@@ -5,15 +5,6 @@
 
 The purpose of this project is to conduct a thorough analysis of the New York City Airbnb listings in 2021.  We must obtain datasets from external sources, perform an analysis with interactive visualizations and deploy this in a Heroku app.  
 
-Heroku App - [https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
-
-## Team Members 
-**Caitlain Beachey** - HTML Developer <br>
-**Amaris Hassan** - Data Research Specialist and Presenter<br>
-**Cecilia Leung** - Data Visualizations Specialist<br>
-**Hillary Mandich** - Project Coordinator<br>
-**Kapil Pundhir** - ETL Specialist and Web Quality Assurance<br>
-
 ## Questions
 
 1.  What are the different types of properties in NYC?
@@ -41,6 +32,9 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 * [Flask App](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/actualApp/app.py)
 * [Javascript/CSS](https://github.com/kman4/Airbnb_analysis_NYC/tree/master/actualApp/static)
 * [HTML](https://github.com/kman4/Airbnb_analysis_NYC/tree/master/actualApp/template)
+
+## Heroku Application
+[https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
 
 ## Data Visualizations
 
@@ -92,7 +86,11 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 * There are more listing and room type options towards the Brooklyn Bridge that links up Manhattan and Brooklyn.
 * The neighbourhood that is most reviewed and has the most superhosts is Bedford-Stuyvesant in Brooklyn.
 
-
-
+## Team Members 
+**Caitlain Beachey** - HTML Developer <br>
+**Amaris Hassan** - Data Research Specialist and Presenter<br>
+**Cecilia Leung** - Data Visualizations Specialist<br>
+**Hillary Mandich** - Project Coordinator<br>
+**Kapil Pundhir** - ETL Specialist and Web Quality Assurance<br>
 
 
