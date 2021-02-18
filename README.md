@@ -5,6 +5,12 @@
 
 The purpose of this project is to conduct a thorough analysis of the New York City Airbnb listings in 2021.  We must obtain datasets from external sources, perform an analysis fwith interactive visualizations and deploy this in a Heroku app.  
 
+## Team Members 
+**Caitlain Beachey** - HTML Developer <br>
+**Amaris Hassan** - Data Research Specialist and Presenter<br>
+**Cecilia Leung** - Data Visualizations Specialist<br>
+**Hillary Mandich** - Project Coordinator<br>
+**Kapil Pundhir** - ETL Specialist and Web Quality Assurance<br>
 
 ## Questions
 
@@ -26,11 +32,6 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 * Using javascript and html to create visualizations from Airbnb Datasets using Plotly, Leaflet, and Bootstrap.
 * Deploy the flask app to heroku.
 
-## Scripts
-
-## Heroku Application
-[https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
-
 ## Data Visualizations
 
 ### Neighbourhood Analysis with Maps
@@ -50,11 +51,18 @@ The choropleth map enables the user to see the map in different views by choosin
 
 ### Borough Analysis with Graphs
 
-The analysis allows the user to see d
+The analysis allows the use the drop down menu to get Airbnb information for the 5 borough in New York City.
 
-## Team Members 
-**Caitlain Beachey** - HTML Developer <br>
-**Amaris Hassan** - Data Research Specialist and Presenter<br>
-**Cecilia Leung** - Data Visualizations Specialist<br>
-**Hillary Mandich** - Project Coordinator<br>
-**Kapil Pundhir** - ETL Specialist and Web Quality Assurance<br>
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/InkedDropdown_LI.jpg)
+
+**1.  Total # Listed Neighbourhoods, Total # Listings, and Total # of Reviews**
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Indicators.png)
+
+**2.  Average Rates from 2017 to 2021**
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Line.png)
+
+## Scripts
+
+## Heroku Application
+[https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
+
