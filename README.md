@@ -82,7 +82,7 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 * Average Rates for private and shared room are significantly lower than enitre home/apt and hotel rooms.
 * Manhattan has the highest average rates and as you go further out from Manhanttan, the prices from the other boroughs are significantly lower.
 * Almost 85% of the listings are in Brooklyn and Manhattan.
-* Over 90% of the Airbnb listigns are an Entire home/apartment and Private Rooms.
+* Over 95% of the Airbnb listigns are entire home/apartment and private Rooms.
 * There are more listing and room type options towards the Brooklyn Bridge that links up Manhattan and Brooklyn.
 * The neighbourhood that is most reviewed and has the most superhosts is Bedford-Stuyvesant in Brooklyn.
 
