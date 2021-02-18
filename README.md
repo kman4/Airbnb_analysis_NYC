@@ -26,32 +26,31 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 * Using javascript and html to create visualizations from Airbnb Datasets using Plotly, Leaflet, and Bootstrap.
 * Deploy the flask app to heroku.
 
+## Scripts
+
 ## Heroku Application
 [https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
 
-## Analysis
+## Data Visualizations
 
-[**Dashboard**](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
-* Provides summary of # of boroughs, # listed neighbourhoods, # of listings, and # of room_types
-* Provides links of various graphs for different boroughs
-* Choropleth map for Rates by Neighbourhood & Room Type
-* Marker Cluster map that shows all the listings in New York City
-  
-[**Interactive**](https://airbnbanalysis2021myflaskapp.herokuapp.com/interactive)
-  * Choropleth map that provides Rates by Neighbourhood & Room Type
-  * This can be view in Gray Scale, Dark Scale and Street Mode settings.
-  * Toggle between the different layers of average rates by neighbourhood, entire home/apt, hotel room, private room and shared room.
+### Neighbourhood Analysis with Maps
 
-[**Graphs**](https://airbnbanalysis2021myflaskapp.herokuapp.com/graphs)
-  * Provides a dropdown menu to see information for each borough:
-    * Total # of Neighbourhoods Listed
-    * Total # of Listing
-    * Total # of Reviews
-    * Rates 2017-2021
-    * Room Type Distribution
-    * Top 15 Neighbourhoods
-    * Top 5 Superhosts
+**1.  Airbnb Listing Details**
 
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Marker%20Cluster.png)
+
+The marker cluster map shows the number of listing within the different boroughs and neighbourhoods in New York City.  As you zoom in the map, the number circle spreads out and you will see blue markers where the exact listing is locating.  You can click on the blue marker and find the infomration of that specific listing.  You can even click on "More info" and it will direct you to the Airbnb link to that specific listing.
+
+
+**2.  Airbnb Rates by Neighbourhood and Room Types**
+
+![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Chropleth.png)
+
+The choropleth map enables the user to see the map in different views by choosing either the light, dark or stret view.  Then the user can choose to view the rates in different layers by choosing to view rates by neighbourhood, entire home/apartment, hotel room, private room or shared room.
+
+### Borough Analysis with Graphs
+
+The analysis allows the user to see d
 
 ## Team Members 
 **Caitlain Beachey** - HTML Developer <br>
