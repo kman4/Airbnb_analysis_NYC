@@ -58,11 +58,3 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 **1.  Total # Listed Neighbourhoods, Total # Listings, and Total # of Reviews**
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Indicators.png)
 
-**2.  Average Rates from 2017 to 2021**
-![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Line.png)
-
-## Scripts
-
-## Heroku Application
-[https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
-
