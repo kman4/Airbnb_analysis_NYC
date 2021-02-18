@@ -32,6 +32,14 @@ Get the Data - Inside Airbnb - [http://insideairbnb.com/get-the-data.html](http:
 * Using javascript and html to create visualizations from Airbnb Datasets using Plotly, Leaflet, and Bootstrap.
 * Deploy the flask app to heroku.
 
+## Scripts
+
+* [Database](https://github.com/kman4/Airbnb_analysis_NYC/tree/master/actualApp/data/Database)
+* [JSON Files](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/actualApp/data/JSON/Jsonify.ipynb)
+* [Flask App](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/actualApp/app.py)
+* [Javascript/CSS](https://github.com/kman4/Airbnb_analysis_NYC/tree/master/actualApp/static)
+* [HTML](https://github.com/kman4/Airbnb_analysis_NYC/tree/master/actualApp/template)
+
 ## Data Visualizations
 
 ### Neighbourhood Analysis with Maps
@@ -72,7 +80,8 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 
 ![Image](https://github.com/kman4/Airbnb_analysis_NYC/blob/master/Images/Bubble.png)
 
-## Data Analysis
+
+## Results
 * The average rates have been lower in 2019-2021 compared to 2017-2018.
 * Average Rates for private and shared room are significantly lower than enitre home/apt and hotel rooms.
 * Manhattan has the highest average rates and as you go further out from Manhanttan, the prices from the other boroughs are significantly lower.
@@ -80,6 +89,7 @@ The analysis allows the use the drop down menu to get Airbnb information for the
 * Over 90% of the Airbnb listigns are an Entire home/apartment and Private Rooms.
 * There are more listing and room type options towards the Brooklyn Bridge that links up Manhattan and Brooklyn.
 * The neighbourhood that is most reviewed and has the most superhosts is Bedford-Stuyvesant in Brooklyn.
+
 
 
 
