@@ -3,7 +3,9 @@
 
 ## Background
 
-The purpose of this project is to conduct a thorough analysis of the New York City Airbnb listings in 2021.  We must obtain datasets from external sources, perform an analysis fwith interactive visualizations and deploy this in a Heroku app.  
+The purpose of this project is to conduct a thorough analysis of the New York City Airbnb listings in 2021.  We must obtain datasets from external sources, perform an analysis with interactive visualizations and deploy this in a Heroku app.  
+
+Heroku App - [https://airbnbanalysis2021myflaskapp.herokuapp.com/](https://airbnbanalysis2021myflaskapp.herokuapp.com/)
 
 ## Team Members 
 **Caitlain Beachey** - HTML Developer <br>
